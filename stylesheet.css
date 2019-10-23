@@ -1,0 +1,33 @@
+.wrapper {
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: auto;
+grid-gap: 8em;
+border: 1px solid black;
+grid
+}
+
+.navigation, .mainc, .faq{
+  background: #eee;
+  border: 1px solid black;
+}
+
+.logo, .slideshow, .kort, .footsie{
+  background: #ddd;
+  border: 1px solid black;
+}
+
+.slideshow {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+
+.kort{
+  grid-row-end: 4;
+  grid-column-start: 2;
+}
+
+.footsie{
+  grid-row-start: 5;
+  grid-column: 1/-1
+}
