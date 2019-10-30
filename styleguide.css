@@ -2,7 +2,7 @@
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: auto;
-grid-gap: 8em;
+grid-gap: 2em;
 border: 1px solid red;
 grid
 }
@@ -11,14 +11,66 @@ grid
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: auto;
-grid-gap: 8em;
+grid-gap: 2em;
 border: 1px solid black;
 grid
 }
 
-.color-1, .mainc, .faq{
+.color-1, .color-3, .color-5{
   background: #eee;
   border: 1px solid black;
+}
+
+.color-2, .color-4, .color-6{
+  background: #fff;
+  border: 1px solid black;
+}
+
+
+.redBtN{
+background-color: red;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 0px 20px 0px 20px;
+}
+
+.blueBtN{
+background-color: blue;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 0px 20px 0px 20px;
+}
+.greenBtN{
+background-color: green;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 0px 20px 0px 20px;
+}
+.blackBtN{
+background-color: green;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 0px 20px 0px 20px;
 }
 
 /* .logo, .slideshow, .kort, .footsie{
