@@ -1,0 +1,33 @@
+body {
+  background: #2E3E54;
+}
+
+
+.wrapper{
+  display:grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  border: 1px solid green;
+  max-height: 100%;
+  max-width: 100%;
+
+}
+
+.text{
+  color: white;
+  grid-column-start: 2;
+}
+
+.imggo {
+  position:relative;
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  /* border: 2px solid red; */
+  grid-column: 2;
+  text-align: center;
+}
+
+.center{
+  max-width: 100%;
+}
