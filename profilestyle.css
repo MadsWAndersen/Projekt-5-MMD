@@ -6,7 +6,6 @@ box-sizing: border-box;
 }
 
 
-
 .wrapper {
 display: grid;
 grid-template-columns: 1fr 3fr 1fr;
@@ -105,7 +104,7 @@ body {
 
 .inp .label {
   position: absolute;
-  top: 16px;
+  top: 10px;
   left: 0;
   font-size: 16px;
   color: #9098a9;
@@ -120,9 +119,9 @@ body {
   left: 0;
   height: 2px;
   width: 100%;
-  background: #07f;
+  background: white;
   transform: scaleX(0);
-  transform-origin: 0 0;
+/*  transform-origin: 0 0;*/
   transition: all 0.15s ease;
 }
 
@@ -131,14 +130,14 @@ body {
   width: 100%;
   border: 0;
   font-family: inherit;
-  padding: 12px 0;
+  padding: 12px 0 0px;
   height: 48px;
   font-size: 16px;
   font-weight: 500;
   border-bottom: 2px solid #c8ccd4;
   background: none;
   border-radius: 0;
-  color: #223254;
+  color: white;
   transition: all 0.15s ease;
 }
 
@@ -147,7 +146,7 @@ body {
 }
 
 .inp input:not(:placeholder-shown) + span {
-  color: #5a667f;
+  color: white;
   transform: translateY(-26px) scale(0.75);
 }
 
@@ -161,6 +160,9 @@ body {
   transform: translateY(-26px) scale(0.75);
 }
 
+/*
 .inp input:focus + span + .border {
   transform: scaleX(1);
+*/
+	
 }
