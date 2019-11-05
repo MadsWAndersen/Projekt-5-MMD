@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+
+ * {
+box-sizing: border-box;
+}
+
+
+
+.wrapper {
+display: grid;
+grid-template-columns: 1fr 3fr 1fr;
+grid-template-rows: auto;
+grid-gap: 4em;
+
+}
+
+main{
+	border: 1px solid red;
+	grid-column: 1/-1; 
+}
+
+body {
+	background-color: #2b3e56;
+	font-family: 'Josefin Sans', sans-serif;
+	height: 100%;
+	display: grid;
+	webkit-text-size-adjust: 100%;
+	webkit-font-smoothing: antialiased;
+}
+
+.backbtn {
+	color: white;
+	grid-column-end: 2;
+	grid-row: 1;
+}
+
+.profiletitle{
+	color: white;
+	grid-column-start: 2;
+	grid-row: 1;
+	font-size: 10px;
+	text-align: center;
+}
+
+.profilepic {
+	color: white;
+	font-size: 150px;
+	grid-column: 2;
+	grid-row: 2;
+	text-align: center;
+	opacity: 0.5;
+}
+
+
+.editbtn {
+	color: white;
+	grid-column: 2;
+	grid-row: 2;
+	margin-top: 80%;
+	margin-right: 0%;
+	margin-left: 80%;
+	z-index: 1000;
+	font-size: 30px;
+}
+
+
+.profiletxt { 
+	color: white;
+	text-decoration: none;
+	text-align: left;
+}
+
+.forms{
+	grid-column: 2;
+	grid-row: 3;
+}
+
+/*Forms*/
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+	display: grid;
+	font-family: 'Josefin Sans', sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.inp {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+}
+
+.inp .label {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  font-size: 16px;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+
+.inp .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #07f;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+
+.inp input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+
+.inp input:hover {
+  background: rgba(34,50,84,0.03);
+}
+
+.inp input:not(:placeholder-shown) + span {
+  color: #5a667f;
+  transform: translateY(-26px) scale(0.75);
+}
+
+.inp input:focus {
+  background: none;
+  outline: none;
+}
+
+.inp input:focus + span {
+  color: #07f;
+  transform: translateY(-26px) scale(0.75);
+}
+
+.inp input:focus + span + .border {
+  transform: scaleX(1);
+}
