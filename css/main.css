@@ -1,0 +1,54 @@
+.gridwrap{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 3fr;
+  border: 1px solid green;
+}
+
+.topsection{
+  grid-column: 1/-1;
+  grid-row: 1;
+  border: 1px solid #000;
+}
+
+.burgermenu{
+
+}
+
+
+.plusicon{
+
+}
+
+/* CAROUSEL */
+
+.carousel{
+grid-column: 2;
+grid-row: 2;
+}
+
+.cards{
+
+}
+
+.dots{
+
+}
+
+/* LIST */
+
+.yourlists{
+
+}
+
+.overskrift{
+
+}
+
+.lists{
+
+}
+
+.addnew{
+
+}
