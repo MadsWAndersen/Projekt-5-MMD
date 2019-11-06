@@ -7,7 +7,7 @@ box-sizing: border-box;
 
 .wrapper {
 display: grid;
-grid-template-columns: 1fr ;
+grid-template-columns: 1fr 3fr 1fr ;
 grid-template-rows: 1fr;
 }
 
@@ -25,53 +25,81 @@ body {
 	grid-column-end: 2;
 	grid-row: 1;
   font-size: 30px;
+
 }
 
-.profiletitle{
+.pagetitle{
 	color: white;
-	grid-column-start: 2;
 	grid-row: 1;
 	font-size: 10px;
 	text-align: center;
+  padding-top: 8px;
+  font-family: 'Josefin Sans';
 }
 
 .cardholders{
-  display: grid
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  margin-top: 10px;
+  margin-left: 5px;
+  align: center;
 }
 
 .cardholder {
-  height: 100%;
-  width: 100%;
-  padding: 40px;
+  height: 100px;
+  width: 165px;
+  border-radius: 10px;
 }
 
 .one {
   background-color: red;
-  grid-row: 2;
+  grid-row: 1;
   grid-column-start: 1;
 }
 .two {
   background-color: blue;
-  grid-row: 3;
+  grid-row: 2;
   grid-column-start: 1;
 }
 .three {
   background-color: green;
-  grid-row: 4;
+  grid-row: 3;
   grid-column-start: 1;
 }
 .four {
   background-color: yellow;
-  grid-row: 2;
+  grid-row: 1;
   grid-column-start: 2;
 }
 .five {
   background-color: grey;
-  grid-row: 3;
+  grid-row: 2;
   grid-column-start: 2;
 }
 .six {
   background-color: black;
+  grid-row: 3;
+  grid-column-start: 2;
+}
+.seven {
+  background-color: black;
   grid-row: 4;
+  grid-column-start: 1;
+}
+.eight {
+  background-color: black;
+  grid-row: 4;
+  grid-column-start: 2;
+}
+.nine {
+  background-color: black;
+  grid-row: 5;
+  grid-column-start: 1;
+}
+.ten {
+  background-color: black;
+  grid-row: 5;
   grid-column-start: 2;
 }
