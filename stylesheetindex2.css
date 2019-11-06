@@ -123,9 +123,11 @@ textarea:focus, input:focus{
 }
 
 
-.signup-btn{
+.signup-btn {
   position: relative;
   font-size: 80%;
+  margin-top: 5%;
+  color: #fff;
 
 
 }
@@ -136,7 +138,7 @@ grid-row-start: 3;
 margin-top: 10%;
 background-image: linear-gradient(to bottom, #75DBCD 0%, #2588A7 100%);
 cursor: pointer;
-color: #fff;
+color:;
 border: none;
 width: 100%;
 height: 20%;
@@ -144,11 +146,13 @@ text-align: center;
 
 }
 
-
+/*
 .trykmig input{
   margin-top: 5.5%;
   color: #fff;
+  outline: 0
 }
+*/
 
 .already{
   grid-column-start: 2;
