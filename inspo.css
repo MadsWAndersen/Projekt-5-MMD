@@ -22,7 +22,6 @@ p {
   height: 100%;
   min-width: 250px;
   background-color: rgb(255, 255, 255);
-
     position: fixed;
   /* flex-direction: column;
   justify-content: center;
@@ -81,10 +80,9 @@ p {
 /* --- main wrapper  --- */
 .mainWrapper {
   position: relative;
-  left: 250px;
+  left: 15%;
   height: auto;
-  max-width: 83%;
-  overflow: hidden;
+  max-width: 84%;
 }
 /* --- First section / Landing section  --- */
 .landingSection {
@@ -97,6 +95,7 @@ p {
   background-color: #6696ac;
   margin-bottom: 50px;
   margin-left: 16px;
+  overflow: hidden;
 }
 .landingSection h1,
 h2 {
