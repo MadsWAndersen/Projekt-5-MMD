@@ -23,12 +23,42 @@
 /* CAROUSEL */
 
 .carousel{
-grid-column: 2;
+grid-column: 1/-1;
 grid-row: 2;
+border: 1px solid red;
+justify-items: center;
+align-items: center;
+text-align: center;
+overflow: hidden;
 }
 
 .cards{
 
+}
+
+.kort1{
+  border: none;
+  color: #ffffff;
+  padding: 15% 14%;
+  background-color: #fca249;
+  border-radius: 12%;
+
+}
+
+.kort2{
+  border: none;
+  color: #ffffff;
+  padding: 20% 20%;
+  background-color: #4CAF50;
+border-radius: 12%;
+}
+
+.kort3{
+  border: none;
+  color: #ffffff;
+  padding: 15% 14%;
+  background-color: blue;
+border-radius: 12%;
 }
 
 .dots{
@@ -38,6 +68,8 @@ grid-row: 2;
 /* LIST */
 
 .yourlists{
+  grid-column: 1/-1;
+  grid-row: 3;
 
 }
 
