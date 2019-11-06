@@ -226,7 +226,7 @@ body {
 
 /*BUTTON*/
 
-.edit-btn {
+#edit-btn {
 	grid-column: 2;
 	grid-row: 4;
 	display: block;
