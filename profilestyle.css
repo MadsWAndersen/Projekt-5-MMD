@@ -120,7 +120,7 @@ body {
 	top: 10px;
 	left: 0;
 	font-size: 100%;
-	color: #9098a9;
+	color: white;
 	font-weight: 500;
 	transform-origin: 0 0;
 	transition: all 0.2s ease;
@@ -134,7 +134,7 @@ body {
 	left: 0;
 	height: 2px;
 	width: 100%;
-	background: white;
+	background: none;
 	transform: scaleX(0);
 	transition: all 0.15s ease;
 }
@@ -148,7 +148,7 @@ body {
 	padding: 12px 0 0px;
 	height: 60px;
 	font-size: 16px;
-	border-bottom: 1px solid #c8ccd4;
+	border-bottom: 1px solid white;
 	background: none;
 	border-radius: 0;
 	color: white;
@@ -162,7 +162,7 @@ body {
 
 
 .inp input:not(:placeholder-shown) + span {
-	color: white;
+	color: #c8ccd4;
 	transform: translateY(-26px) scale(0.75);
 }
 
@@ -174,7 +174,7 @@ body {
 
 
 .inp input:focus + span {
-	color: white;
+	color: #c8ccd4;
 	transform: translateY(-26px) scale(0.75);
 }
 
@@ -190,7 +190,7 @@ body {
 .profileinp .fa-user {
 	position: absolute;
 	top: -2px;
-	left: -14px;
+	left: -13px;
 }
 
 /*EMAIL ICON*/
@@ -220,7 +220,7 @@ body {
 .mobileinp .fa-mobile-alt {
 	position: absolute;
 	top: -2px;
-	left: -14px;
+	left: -11px;
 }
 
 
@@ -234,7 +234,7 @@ body {
 	color: white;
 	background-image: linear-gradient(to bottom, #75DBCD 0%, #2588A7 100%);
 	border: none;
-	margin-top: 10%;
+	margin-top: 20%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 80%;
 }
