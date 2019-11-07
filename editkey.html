@@ -39,16 +39,57 @@
 
       <section class="nameinp">
         <label for="inp" class="inp">
-
     	     <input type="text" placeholder="&nbsp;">
-    	      <span class="label"><div  class="fas fa-user"></div> KEY NAME</span>
+    	      <span class="label"><div  class="fa fa-key"></div> KEY NAME</span>
     	      <span class="border"></span>
          </label>
       </section>
 
+    <p>TAP KEY TO CONNECT</p>
     <button type="button" name="button" class="edit-btn">CONNECT KEY</button>
 
-    <button type="button" name="button"></button>
+<!-- FÅ KOORDINATER -->
+    <p>GET COORDINATES FOR KEY</p>
+    <button class="edit-btn" onclick="getLocation()">GET LOCATION</button>
+    <p id="location"></p>
+    <script>
+      var x = document.getElementById("location");
+
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function showPosition(position) {
+        x.innerHTML = "LATITUDE: " + position.coords.latitude +
+        "<br>LONGITUDE: " + position.coords.longitude;
+      }
+    </script>
+
+<!-- ÆNDRE KORTFARVE -->
+    <p>CARD APPEARANCE</p>
+    <button class="color-btn first"></button>
+    <button class="color-btn second"></button>
+    <button class="color-btn third"></button>
+    <button class="add-color-btn"><div class="fa fa-plus"></div></button>
+    <button class="add-photo-btn"><div class="fa fa-camera"></div></button>
+    <script>
+      var button = document.querySelector("button");
+
+      button.addEventListener("click", function() {
+        const curColour = document.cardholder.style.backgroundColor;
+
+      if (curColour === 'red') {
+        document.cardholder.style.backgroundColor = "blue";
+      }
+      else {
+        document.cardholder.style.backgroundColor = "red";
+      }
+    });
+    </script>
 
     </section>
   </main>
