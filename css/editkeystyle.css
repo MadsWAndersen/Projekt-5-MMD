@@ -243,10 +243,3 @@ ul {
   float: left;
   margin-bottom: 20px;
 }
-
-.list-btn.iconize {
-    background: url(billeder/star-regular.svg);
-}
-.list-btn.iconize2 {
-    background: url("") no-repeat 5px center;
-}
