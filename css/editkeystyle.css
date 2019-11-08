@@ -243,3 +243,31 @@ ul {
   float: left;
   margin-bottom: 20px;
 }
+
+label {
+  float:left;
+}
+
+input {
+  display: none;
+  }
+span {
+  width: 50px;
+  font-size: 40px;
+  background: url(../billeder/star-regular.svg) no-repeat;
+  background-size: 40px;
+  background-position: center;
+  color: transparent;
+  border-width: thin;
+  border-color: red;
+  }
+input:checked + span {
+  background: url(../billeder/star-solid.svg) no-repeat;
+  background-size: 40px;
+  background-position: center;
+  color: transparent;
+  }
+
+img {
+  height: 40px;
+}
