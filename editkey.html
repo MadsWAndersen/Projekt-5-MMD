@@ -40,7 +40,7 @@
       <section class="nameinp">
         <label for="inp" class="inp">
     	     <input type="text" placeholder="&nbsp;">
-    	      <span class="label"><div  class="fa fa-key"></div> KEY NAME</span>
+    	      <span class="label"><div  class="fa fa-key"></div>KEY NAME</span>
     	      <span class="border"></span>
          </label>
       </section>
@@ -94,7 +94,18 @@
 <!-- LISTER -->
     <p>LISTS</p>
     <ul>
-    <button class="list-btn"><div class="far fa-star"></div></button>
+    <button class="list-btn iconize"><div></div></button>
+
+    <script>
+      document.getElementById("w8-d-blue").addEventListener("click", function (e) {
+      var target = e.target;
+
+      target.classList.toggle("iconize");
+      target.classList.toggle("iconize2");
+      }, false);
+    </script>
+
+
     <button class="list-btn"><div class="far fa-file-alt"></div></button>
     <button class="list-btn"><div class="far fa-building"></div></button>
     <button class="list-btn"><div class="far fa-id-card"></div></button>
