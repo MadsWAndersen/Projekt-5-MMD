@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document */
+
+ * {
+	box-sizing: border-box;
+}
+
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 5px;
+}
+
+
+main{
+	grid-column: 1/-1;
+}
+
+
+body {
+	background-color: #2b3e56;
+	font-family: 'Josefin Sans', sans-serif;
+	height: 100%;
+	display: grid;
+	webkit-text-size-adjust: 100%;
+	webkit-font-smoothing: antialiased;
+}
+
+
+.backbtn {
+	color: white;
+	grid-column-end: 2;
+	grid-row: 1;
+	text-align: center;
+	padding-top: 33px;
+	font-size: 100%;
+}
+
+
+.profiletitle{
+	color: white;
+	grid-column-start: 2;
+	grid-row: 1;
+	font-size: 80%;
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+h1{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: lighter;
+}
+
+
+.profilepic {
+	grid-column: 2;
+	grid-row: 1;
+  position:relative;
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  /* border: 2px solid red; */
+  grid-column: 2;
+  text-align: center;
+}
+
+.center{
+  max-width: 70%;
+}
+
+
+.editbtn {
+	color: white;
+	grid-column: 2;
+	grid-row: 2;
+	margin-top: 65%;
+	margin-right: 0%;
+	margin-left: 70%;
+	z-index: 1000;
+	font-size: 35px;
+}
+
+
+.profiletxt {
+	color: white;
+	text-decoration: none;
+	text-align: left;
+}
+
+
+.forms{
+	grid-column: 2;
+	grid-row: 3;
+}
+
+
+/*FORMS*/
+
+
+body {
+	display: grid;
+	font-family: 'Josefin Sans', sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+.inp {
+	position: relative;
+	margin: auto;
+	width: 100%;
+	max-width: 280px;
+}
+
+
+.inp .label {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	font-size: 100%;
+	color: white;
+	font-weight: 500;
+	transform-origin: 0 0;
+	transition: all 0.2s ease;
+	text-indent: 14px;
+}
+
+
+.inp .border {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background: none;
+	transform: scaleX(0);
+	transition: all 0.15s ease;
+}
+
+
+.inp input {
+	-webkit-appearance: none;
+	width: 100%;
+	border: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 12px 0 0px;
+	height: 60px;
+	font-size: 16px;
+	border-bottom: 1px solid white;
+	background: none;
+	border-radius: 0;
+	color: white;
+	transition: all 0.15s ease;
+}
+
+
+.inp input:hover {
+	background: rgba(34,50,84,0.03);
+}
+
+
+.inp input:not(:placeholder-shown) + span {
+	color: #c8ccd4;
+	transform: translateY(-26px) scale(0.75);
+}
+
+
+.inp input:focus {
+	background: none;
+	outline: none;
+}
+
+
+.inp input:focus + span {
+	color: #c8ccd4;
+	transform: translateY(-26px) scale(0.75);
+}
+
+/* EMAIL ICON*/
+
+.profileinp {
+	position: relative;
+	color: white;
+	font-size: 80%;
+}
+
+
+.profileinp .fa-envelope {
+	position: absolute;
+	top: -0px;
+	left: -15px;
+}
+
+/*MOBILE ICON*/
+
+.iconinp {
+	position: relative;
+	color: white;
+	font-size: 80%;
+}
+
+
+.iconinp .fa-mobile-alt {
+	position: absolute;
+	top: 0px;
+	left: -13px;
+}
+
+/*PASSWORD ICON*/
+
+.mobileinp {
+	position: relative;
+	color: white;
+	font-size: 80%;
+
+}
+
+
+.mobileinp .fa-lock {
+	position: absolute;
+	top: -2px;
+	left: -14px;
+}
+
+.forgot a{
+  grid-column: 2;
+  grid-row: 2;
+  position: relative;
+  top: 54%;
+  left: 60%;
+  text-decoration: underline;
+  color: #70D0C4;
+  font-size: 50%;
+}
+
+
+
+
+/*BUTTON*/
+
+#edit-btn {
+	grid-column: 2;
+	grid-row: 4;
+	display: block;
+	height: 44px;
+	color: white;
+	background-image: linear-gradient(to bottom, #75DBCD 0%, #2588A7 100%);
+	border: none;
+	margin-top: 18%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 80%;
+}
+
+.already{
+  grid-column-start: 2;
+  grid-row-start: 4;
+  text-align: center;
+  margin-top: 37%;
+}
+
+
+.already a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 50%;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.already u{
+  color: #75DBCD;
+}

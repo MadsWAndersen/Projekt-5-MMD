@@ -7,11 +7,10 @@
   <title>edit key</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
 
 	<link href="css/editkeystyle.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/758f05fc43.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/758f05fc43.js" crossorigin="anonymous" src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" data-auto-replace-svg="nest" defer></script>
 </head>
 
 
@@ -94,16 +93,10 @@
 <!-- LISTER -->
     <p>LISTS</p>
     <ul>
-    <button class="list-btn iconize"><div></div></button>
+    <!--<button class="list-btn star"><div class="far fa-star"></div></button>-->
 
-    <script>
-      document.getElementById("w8-d-blue").addEventListener("click", function (e) {
-      var target = e.target;
 
-      target.classList.toggle("iconize");
-      target.classList.toggle("iconize2");
-      }, false);
-    </script>
+    <button id="button" class="list-btn"><i class="far fa-star"></i></button>
 
 
     <button class="list-btn"><div class="far fa-file-alt"></div></button>
@@ -114,6 +107,47 @@
 
   <button type="button" name="button" class="save-btn">SAVE CHANGES</button>
   <button type="button" name="button" class="cancel-btn"><a href="main.html">CANCEL<a/></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <button id="button">Open up <i class="fa fa-angle-right"></i></button>
+
+    <script>
+    function $(document.getElementById("button"))
+
+    document.addEventListener('DOMContentLoaded', function () {
+      $ ("button").on('click', function () {
+        $(this)
+          .find('[data-fa-i2svg]')
+          .toggleClass('fa-angle-down')
+          .toggleClass('fa-angle-right');
+        });
+      });
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
 
     </section>
   </main>
