@@ -67,6 +67,11 @@ p {
   margin-top: 40px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /*FORMS*/
 
 .forms{
@@ -229,10 +234,19 @@ ul {
   margin-top: -10px;
 }
 
+/*LIST BUTTONS*/
+
 .list-btn {
   color: white;
   font-size: 35px;
   position: relative;
   float: left;
   margin-bottom: 20px;
+}
+
+.list-btn.iconize {
+    background: url(billeder/star-regular.svg);
+}
+.list-btn.iconize2 {
+    background: url("") no-repeat 5px center;
 }
