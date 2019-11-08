@@ -4,8 +4,9 @@ grid-template-columns: auto;
 grid-template-rows: auto;
 grid-gap: 8em;
 border: 1px solid black;
-grid
+
 }
+
 
 .navigation, .mainc, .faq{
   background: #eee;
@@ -16,6 +17,9 @@ grid
   background: #ddd;
   border: 1px solid black;
 }
+
+
+
 
 .slideshow {
   grid-column: 1/-1;
