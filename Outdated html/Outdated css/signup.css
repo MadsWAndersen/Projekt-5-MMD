@@ -137,7 +137,7 @@ textarea:focus, input:focus{
 	-ms-user-select: none;
 	user-select: none;
 	text-align: left;
-	
+
 }
 
 
@@ -213,15 +213,6 @@ grid-row-start: 3;
 
 }
 
-
-
-/*
-.trykmig input{
-  margin-top: 5.5%;
-  color: #fff;
-  outline: 0
-}
-*/
 
 .already{
   grid-column-start: 2;
