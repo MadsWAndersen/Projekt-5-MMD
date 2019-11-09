@@ -13,10 +13,38 @@
 
 <div class="gridwrap">
 
+
+
+
+
+
+
 <section class="topsection">
-  <div class="burgermenu">
+  <!-- <div class="burgermenu">
     <i class="fas fa-bars"></i>
-  </div>
+    <div class="hamburger1">
+
+    </div> -->
+
+
+    <button class="hamburger hamburger--spring" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+      <script>
+        /* // Look for .hamburger */
+        let hamburger = document.querySelector(".hamburger");
+        /* // On click */
+        hamburger.addEventListener("click", function() {
+          /* // Toggle class "is-active" */
+          hamburger.classList.toggle("is-active");
+          /* // Do something else, like open/close menu */
+        });
+      </script>
+    </button>
+
+  <!-- </div> -->
+
     <div class="plusicon">
       <i class="fas fa-plus"></i>
   </div>
@@ -67,6 +95,15 @@
       <p class="txtlist">ADD NEW LIST</p>
       </div>
 </section>
+
+
+
+
+
+
+
+
+
 
 </div>
 </body>
