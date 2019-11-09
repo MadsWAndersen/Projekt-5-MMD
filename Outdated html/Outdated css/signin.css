@@ -1,0 +1,177 @@
+
+/* Font + baggrundsfarve */
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  background: #2E3E54;
+
+
+}
+
+/* GRID */
+
+.wrapper{
+  display:grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-gap: 5px;;
+  /* border: 1px solid green; */
+  max-height: 100%;
+  max-width: 100%;
+
+}
+
+/* Her arbejdes med logo placering og størrelse i grid */
+
+.imggo {
+  position:relative;
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  /* border: 2px solid red; */
+  grid-column: 2;
+  text-align: center;
+
+}
+
+.center{
+  max-width: 70%;
+}
+
+
+/* Sign up form */
+
+.signup{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  text-align: center;
+  padding-top: 20px;
+  position: relative;
+  color: #fff;
+}
+
+/* Fjerner boksen rundt om input felter når du trykker */
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* Sign up kasserne */
+
+.signup input{
+  display: block;
+  width: 100%;
+  height: 25px;
+  font-size: 80%;
+  color: #fff;
+  margin-top: 13%;
+
+
+/* Tilføjer stregen under input felterne */
+
+  outline: 0;
+  border-width: 0 0 0.5px;
+  border-color: #fff;
+
+}
+
+/* Styrer tekstboksen rundt up inputs */
+
+.txtb{
+  margin: 20px 0;
+  background: #2E3E54;
+  color: #fff;
+}
+
+/* Email Icon */
+
+.email {
+  position: relative;
+}
+
+.email input { text-indent: 24px;}
+.email .fa-envelope {
+  position: absolute;
+  top: 2px;
+  left: 0px;
+}
+
+
+/* Password Icon */
+
+.password {
+  position: relative;
+}
+
+.password input { text-indent: 24px;}
+.password .fa-lock{
+  position: absolute;
+  top: 2px;
+  left: 0px;
+}
+
+/* Forgotten Password */
+
+.forgot a{
+  position: absolute;
+  top: 70%;
+  right: 0%;
+  text-decoration: underline;
+  color: #70D0C4;
+  font-size: 50%;
+}
+
+/* Log in */
+
+.trykmig{
+grid-column-start: 2;
+grid-row-start: 3;
+
+}
+
+.signup-btn {
+  position: relative;
+  font-size: 80%;
+  margin-top: 6%;
+  color: #fff;
+  margin-top: 0%;
+  background-image: linear-gradient(to bottom, #75DBCD 0%, #2588A7 100%);
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+
+}
+
+
+
+/*
+.trykmig input{
+  margin-top: 5.5%;
+  color: #fff;
+  outline: 0
+}
+*/
+
+/* "Dont have an account?" */
+
+.already{
+  grid-column-start: 2;
+  grid-row-start: 3;
+  margin-top:18%;
+  text-align: center;
+  margin-bottom: 5.5%;
+}
+
+.already a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 50%;
+}
+
+.already u{
+  color: #75DBCD;
+}

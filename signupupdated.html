@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-	
+
 <head>
   <meta charset="UTF-8">
-	
+
   <title>profile</title>
-	
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-	
-	<link href="css/profilestyle.css" rel="stylesheet" type="text/css">
+
+	<link href="css/signupupdated.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/758f05fc43.js" crossorigin="anonymous"></script>
 	<script src="profilejava.js" defer></script>
@@ -17,61 +17,61 @@
 
 <body>
   <div class="wrapper">
-	  
-	 <main class="backbtn">
-	  
-	<i class="fas fa-chevron-left"></i>
-		 
-	</main>
-	  
-	<section class="profiletitle">
-		<h1>PROFILE</h1>
-    </section>
-  
+
+
+
+
 	 <section class="profilepic">
-		 <i class="fas fa-user-circle"></i>
+		 <br><br><br>
+		 <img src="Billeder/LOGONAVN.png" alt="logo" class="center">
 	 </section>
-	  
-<section class="editbtn">
-	  <i class="fas fa-camera"></i>
-</section>
-	
-<!-- FORMS -->  
-	  
+
+
+
+<!-- FORMS -->
+
 <section class="forms">
 
 <section class="profileinp">
 <label for="inp" class="inp">
 	<input type="text" placeholder="&nbsp;">
-	<span class="label"><span  class="fas fa-user"></span>NAME</span>
+	<span class="label"><span  class="fas fa-envelope"></span>E-MAIL</span>
 	<span class="border"></span>
 </label>
 </section>
-	
+
 <section class="iconinp">
-<label for="inp" class="inp">
-	<input type="text" placeholder="&nbsp;">
-	<span class="label"><span class="fas fa-envelope"></span>EMAIL</span>
-	<span class="border"></span>
-</label>
-</section>
-	
-<section class="mobileinp">
 <label for="inp" class="inp">
 	<input type="text" placeholder="&nbsp;">
 	<span class="label"><span class="fas fa-mobile-alt"></span>PHONE NUMBER</span>
 	<span class="border"></span>
 </label>
-</section>  
+</section>
+
+<section class="mobileinp">
+<label for="inp" class="inp">
+	<input type="text" placeholder="&nbsp;">
+	<span class="label"><span class="fas fa-lock"></span>PASSWORD</span>
+	<span class="border"></span>
+</label>
+</section>
+
+<label class="checkbox">AGREE TO <u>TERMS AND CONDITIONS</u>
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
 
 </section>
-	  
+
 <!-- EDIT BUTTON -->
-	  
-<!--<input type="submit" value="EDIT" id="edit-btn">-->
-	  
-<button onclick="function saveEdit()" id="edit-btn">EDIT</button>
-	  
+
+<input type="submit" value="SIGN UP" id="edit-btn">
+<div class="already">
+      <a href="login.html">ALREADY HAVE AN ACCOUNT? <u>LOG IN HERE!</u></a>
+</div>
+
+
 </div>
 </body>
 </html>

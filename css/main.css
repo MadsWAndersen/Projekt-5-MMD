@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
@@ -309,3 +310,165 @@ color: #ffffff;
   font-size: 16px;
 
 }
+=======
+*{
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ffffff;
+
+}
+
+body{
+    background: #2E3E54;
+}
+
+.gridwrap{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 0.5fr 3fr;
+  /* border: 1px solid green; */
+}
+
+.topsection{
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 1;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  /* border: 1px solid #000; */
+  font-size: 36px;
+
+}
+
+.burgermenu{
+display: inline-block;
+margin-top: 5%;
+margin-left: 5%;
+
+}
+
+
+.plusicon{
+  display: inline-block;
+  margin-top: 5%;
+  margin-right: 5%;
+justify-self: end;
+
+}
+
+/* CAROUSEL */
+
+.carousel{
+grid-column: 1/-1;
+grid-row: 2;
+margin-top: 10%;
+/* border: 1px solid red; */
+text-align: center;
+}
+
+
+.kort1{
+  border: none;
+  color: #ffffff;
+  padding: 13% 12%;
+  background-color: #fca249;
+  border-radius: 12%;
+
+}
+
+.kort2{
+  border: none;
+  color: #ffffff;
+  padding: 17% 24%;
+  background-color: #4CAF50;
+border-radius: 12%;
+}
+
+.kort3{
+  border: none;
+  color: #ffffff;
+  padding: 13% 12%;
+  background-color: blue;
+border-radius: 12%;
+}
+
+.dots-container{
+  grid-column: 2;
+  grid-row: 3;
+  text-align: center;
+  margin-top: -12%;
+  /* border: 1px solid yellow; */
+
+}
+
+.dots{
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    background-color: #f6f6f6;
+    opacity: 0.6;
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+/* LIST */
+
+.yourlists{
+  grid-column: 1/-1;
+  grid-row: 4;
+  margin-top: -2%;
+  /* border: 1px solid #000; */
+}
+
+.overskrift{
+font-size: 20px;
+font-weight: 300;
+margin-bottom: 5%;
+margin-left: 5%;
+}
+
+
+.list{
+
+background-color: #62bdba;
+min-height: 60px;
+margin-top: 2%;
+width: 96%;
+margin-left: 2%;
+line-height: 60px;
+color: #ffffff;
+
+}
+
+.list p{
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.list i{
+  margin-left: 3%;
+  font-size: 16px;
+}
+
+.addnew{
+  background-color: #375868;
+  min-height: 60px;
+  margin-top: 2%;
+  width: 96%;
+  margin-left: 2%;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.addnew p{
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.addnew i{
+  margin-left: 3%;
+  font-size: 16px;
+
+}
+>>>>>>> 0a083dec50b555eab59e4e64c23dc4547b87984d

@@ -15,7 +15,7 @@
 
 
 main{
-	grid-column: 1/-1; 
+	grid-column: 1/-1;
 }
 
 
@@ -56,13 +56,18 @@ h1{
 
 
 .profilepic {
-	color: white;
-	font-size: 170px;
 	grid-column: 2;
-	grid-row: 2;
-	text-align: center;
-	margin-top: 10%;
-	opacity: 0.5;
+	grid-row: 1;
+  position:relative;
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  /* border: 2px solid red; */
+  grid-column: 2;
+  text-align: center;
+}
+
+.center{
+  max-width: 70%;
 }
 
 
@@ -78,7 +83,7 @@ h1{
 }
 
 
-.profiletxt { 
+.profiletxt {
 	color: white;
 	text-decoration: none;
 	text-align: left;
@@ -178,7 +183,7 @@ body {
 	transform: translateY(-26px) scale(0.75);
 }
 
-/*PROFILE ICON*/
+/* EMAIL ICON*/
 
 .profileinp {
 	position: relative;
@@ -187,13 +192,13 @@ body {
 }
 
 
-.profileinp .fa-user {
+.profileinp .fa-envelope {
 	position: absolute;
-	top: -2px;
-	left: -13px;
+	top: -0px;
+	left: -15px;
 }
 
-/*EMAIL ICON*/
+/*MOBILE ICON*/
 
 .iconinp {
 	position: relative;
@@ -202,26 +207,96 @@ body {
 }
 
 
-.iconinp .fa-envelope {
+.iconinp .fa-mobile-alt {
 	position: absolute;
 	top: 0px;
-	left: -14px;
+	left: -13px;
 }
 
-/*PHONE NUMBER ICON*/
+/*PASSWORD ICON*/
 
 .mobileinp {
 	position: relative;
 	color: white;
 	font-size: 80%;
+
 }
 
 
-.mobileinp .fa-mobile-alt {
+.mobileinp .fa-lock {
 	position: absolute;
 	top: -2px;
-	left: -11px;
+	left: -14px;
 }
+
+/* Checkbox */
+
+.checkbox {
+	display: block;
+	position: relative;
+	text-indent: 24px;
+ 	cursor: pointer;
+	font-size: 75%;
+	padding-top: 6px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	text-align: left;
+  margin-top: 5%;
+  color: #fff;
+
+}
+
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #747474;
+}
+
+
+.checkbox input:checked ~ .checkmark {
+  background-color: #75DBCD;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.checkbox .checkmark:after {
+  left: 4.5px;
+  top: 3.5px;
+  width: 2.5px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 
 
 /*BUTTON*/
@@ -239,3 +314,22 @@ body {
 	font-size: 80%;
 }
 
+.already{
+  grid-column-start: 2;
+  grid-row-start: 4;
+  text-align: center;
+  margin-top: 37%;
+}
+
+
+.already a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 50%;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.already u{
+  color: #75DBCD;
+}

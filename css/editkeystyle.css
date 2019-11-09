@@ -15,6 +15,7 @@ box-sizing: border-box;
   background-color: #2b3e56;
   opacity: 95%;
   top: 0;
+  z-index: 1;
 }
 
 body {
@@ -45,21 +46,41 @@ body {
 
 main {
   margin-top: 70px;
+  align-content: center;
+  display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: 1fr 5fr;
+	grid-gap: 5px;
 }
 
+.cardholder {
+  background-color: lightgreen;
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  grid-column: 2;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
 
 /*FORMS*/
 
 .forms{
 	grid-column: 2;
-	grid-row: 3;
+	grid-row: 2;
 }
 
-body {
-	display: grid;
-	font-family: 'Josefin Sans', sans-serif;
-	-webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
+.nameinp {
+  grid-row: 1;
 }
 
 .inp {
@@ -124,4 +145,129 @@ body {
 .inp input:focus + span {
 	color: #c8ccd4;
 	transform: translateY(-26px) scale(0.75);
+}
+
+
+/*BUTTON*/
+
+.edit-btn {
+	grid-column: 2;
+	grid-row: 4;
+	display: block;
+	height: 50px;
+  width: 100%;
+	color: white;
+  margin-top: -10px;
+	background-image: linear-gradient(to bottom, #75DBCD 0%, #2588A7 100%);
+	border: none;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 100%;
+}
+
+.save-btn {
+	grid-column: 2;
+	grid-row: 5;
+	display: block;
+	height: 50px;
+  width: 100%;
+	color: white;
+  margin-top: 100px;
+	background-image: linear-gradient(to bottom, #75DBCD 0%, #2588A7 100%);
+	border: none;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 100%;
+}
+.cancel-btn {
+	grid-column: 2;
+	grid-row: 4;
+	display: block;
+	height: 50px;
+  width: 100%;
+	color: white;
+  margin-top: 20px;
+	background-image: linear-gradient(to bottom, #35616F 0%, #3E6D7C 100%);
+	border: none;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 100%;
+}
+
+
+/*COLOR BUTTONS*/
+
+.color-btn {
+  width: 45px;
+  height: 45px;
+}
+.first {
+  background-color: white;
+}
+.second {
+  background-color: #375868;
+}
+.third {
+  background-color: #54B9BD;
+}
+
+.add-color-btn {
+  position: absolute;
+  float: right;
+  margin-right: -10px;
+  width: 45px;
+  height: 45px;
+  background-color: #2b3e56;
+  border-color: #979FAA;
+  border-width: thin;
+  color: white;
+}
+.add-photo-btn {
+  float: right;
+  width: 45px;
+  height: 45px;
+  background-color: #2b3e56;
+  border-color: white;
+  border-width: thin;
+  color: white;
+}
+
+ul {
+  margin-left: -45px;
+  margin-top: -10px;
+}
+
+/*LIST BUTTONS*/
+
+.list-btn {
+  color: white;
+  font-size: 35px;
+  position: relative;
+  float: left;
+  margin-bottom: 20px;
+}
+
+label {
+  float:left;
+}
+
+input {
+  display: none;
+  }
+span {
+  width: 50px;
+  font-size: 40px;
+  background: url(../billeder/star-regular.svg) no-repeat;
+  background-size: 40px;
+  background-position: center;
+  color: transparent;
+  border-width: thin;
+  border-color: red;
+  }
+input:checked + span {
+  background: url(../billeder/star-solid.svg) no-repeat;
+  background-size: 40px;
+  background-position: center;
+  color: transparent;
+  }
+
+img {
+  height: 40px;
 }
