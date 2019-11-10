@@ -107,6 +107,11 @@ body {
 }
 
 
+.notransition {
+	transition: none !important;
+	transform: none !important;
+}
+
 .inp {
 	position: relative;
 	margin: auto;
