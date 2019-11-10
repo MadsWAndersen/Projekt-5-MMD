@@ -247,10 +247,11 @@ ul {
 label {
   float:left;
 }
-
 input {
   display: none;
   }
+
+/*STJERNE*/
 span {
   width: 50px;
   font-size: 40px;
@@ -258,8 +259,7 @@ span {
   background-size: 40px;
   background-position: center;
   color: transparent;
-  border-width: thin;
-  border-color: red;
+  z-index: 1;
   }
 input:checked + span {
   background: url(../billeder/star-solid.svg) no-repeat;
@@ -268,6 +268,64 @@ input:checked + span {
   color: transparent;
   }
 
-img {
-  height: 40px;
-}
+/*WORK*/
+#work {
+    width: 50px;
+    font-size: 40px;
+    background: url(../billeder/file-alt-regular.svg) no-repeat;
+    background-size: 40px;
+    background-position: center;
+    color: transparent;
+    }
+  #inputwork:checked + #work {
+    background: url(../billeder/file-alt-solid.svg) no-repeat;
+    background-size: 40px;
+    background-position: center;
+    color: transparent;
+    }
+/*HOME*/
+#home {
+    width: 50px;
+    font-size: 40px;
+    background: url(../billeder/building-regular.svg) no-repeat;
+    background-size: 40px;
+    background-position: center;
+    color: transparent;
+    }
+#inputhome:checked + #home {
+    background: url(../billeder/building-solid.svg) no-repeat;
+    background-size: 40px;
+    background-position: center;
+    color: transparent;
+    }
+
+/*CARD*/
+#card {
+    width: 50px;
+    font-size: 40px;
+    background: url(../billeder/id-card-regular.svg) no-repeat;
+    background-size: 40px;
+    background-position: center;
+    color: transparent;
+    }
+#inputcard:checked + #card {
+    background: url(../billeder/id-card-solid.svg) no-repeat;
+    background-size: 40px;
+    background-position: center;
+    color: transparent;
+    }
+/*PLANE*/
+#plane {
+    width: 50px;
+    font-size: 40px;
+    background: url(../billeder/paper-plane-regular.svg) no-repeat;
+    background-size: 40px;
+    background-position: center;
+    color: transparent;
+    }
+#inputplane:checked + #plane {
+    background: url(../billeder/paper-plane-solid.svg) no-repeat;
+    background-size: 40px;
+    background-position: center;
+    color: transparent;
+    }
