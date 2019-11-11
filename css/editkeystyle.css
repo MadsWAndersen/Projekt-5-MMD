@@ -84,6 +84,7 @@ a {
   color: white;
 }
 
+
 /*FORMS*/
 
 #field1 {
@@ -214,6 +215,7 @@ a {
 .color-btn {
   width: 45px;
   height: 45px;
+  margin-left: 1px;
 }
 .first {
   background-color: #ffffff;
@@ -227,8 +229,7 @@ a {
 
 .add-color-btn {
   position: absolute;
-  float: right;
-  margin-right: -10px;
+  margin-left: 5px;
   width: 45px;
   height: 45px;
   background-color: #2b3e56;
