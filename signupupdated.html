@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>profile</title>
+  <title>Multikey</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
@@ -12,7 +12,7 @@
 	<link href="css/signupupdated.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/758f05fc43.js" crossorigin="anonymous"></script>
-	<script src="profilejava.js" defer></script>
+	<script src="signup.js" defer></script>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 
 
 
-	 <section class="profilepic">
+	 <section class="logo">
 		 <br><br><br>
 		 <img src="Billeder/LOGONAVN.png" alt="logo" class="center">
 	 </section>
@@ -32,33 +32,38 @@
 
 <section class="forms">
 
+<form method="POST" action="#" onsubmit="return Validate()" name="vform">
 <section class="profileinp">
 <label for="inp" class="inp">
-	<input type="text" placeholder="&nbsp;">
+	<input type="text" placeholder="&nbsp;" name="email">
 	<span class="label"><span  class="fas fa-envelope"></span>E-MAIL</span>
 	<span class="border"></span>
+  <div id="email_error"></div>
 </label>
 </section>
 
 <section class="iconinp">
 <label for="inp" class="inp">
-	<input type="text" placeholder="&nbsp;">
+	<input type="text" placeholder="&nbsp;" name="phone">
 	<span class="label"><span class="fas fa-mobile-alt"></span>PHONE NUMBER</span>
 	<span class="border"></span>
+  <div id="phone_error"></div>
 </label>
 </section>
 
 <section class="mobileinp">
 <label for="inp" class="inp">
-	<input type="text" placeholder="&nbsp;">
+	<input type="password" placeholder="&nbsp;" name="pass">
 	<span class="label"><span class="fas fa-lock"></span>PASSWORD</span>
 	<span class="border"></span>
+  <div id="pass_error"></div>
 </label>
 </section>
 
 <label class="checkbox">AGREE TO <u>TERMS AND CONDITIONS</u>
   <input type="checkbox">
   <span class="checkmark"></span>
+
 </label>
 
 
@@ -67,9 +72,11 @@
 <!-- EDIT BUTTON -->
 
 <input type="submit" value="SIGN UP" id="edit-btn">
+</form>
 <div class="already">
       <a href="login.html">ALREADY HAVE AN ACCOUNT? <u>LOG IN HERE!</u></a>
 </div>
+
 
 
 </div>
