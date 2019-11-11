@@ -38,6 +38,10 @@ body {
 	font-size: 100%;
 }
 
+a {
+	color: white;
+}
+
 
 .profiletitle{
 	color: white;
@@ -207,14 +211,14 @@ body {
 
 /*EMAIL ICON*/
 
-.iconinp {
+.emailinp {
 	position: relative;
 	color: white;
 	font-size: 80%;
 }
 
 
-.iconinp .fa-envelope {
+.emailinp .fa-envelope {
 	position: absolute;
 	top: 0px;
 	left: -14px;
