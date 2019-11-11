@@ -1,5 +1,5 @@
-console.log("Hello world!");
 
+// Selecting all text elements //
 
 var email = document.forms["vform"]["email"];
 var phone = document.forms["vform"]["phone"];
@@ -10,7 +10,6 @@ var email_error = document.getElementById('email_error')
 var phone_error = document.getElementById('phone_error')
 var pass_error = document.getElementById('pass_error')
 
-console.log("Hello world!");
 
 // Setting all event listeners //
 
@@ -22,9 +21,9 @@ pass.addEventListener("blur", passVerify, true);
 
 // Validation function //
 
+function Validate(){
 // email validation //
 
-function Validate(){
   if (email.value == "") {
     email_error.textContent = "Email is required";
     email.focus();
@@ -47,24 +46,27 @@ function Validate(){
 }
 
 // Event handler functions
-function emailVerify(){
-  if (email.value !="") {
-    document.getElementByClass('profileinp')
-    email_error.InnnerHTML = "email";
+function emailVerify() {
+  if (email.value != "") {
+    document.getElementById('email')
+    email_error.innerHTML = "";
     return true;
   }
 }
 
-function phoneVerify(){
-  if (phone.value !="") {
-    phone_error.InnnerHTML = "";
+function phoneVerify() {
+  if (phone.value != "") {
+    document.getElementById('phone')
+    phone_error.innerHTML = "";
     return true;
   }
 }
 
-function passVerify(){
-  if (pass.value !="") {
-    pass_error.InnnerHTML = "";
+
+function passVerify() {
+  if (pass.value != "") {
+    document.getElementById('pass')
+    pass_error.innerHTML = "";
     return true;
   }
 }

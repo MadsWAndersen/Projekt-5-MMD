@@ -100,21 +100,20 @@ body {
 
 }
 
-#pass_error {
-  color: red;
-  position: absolute;
-  top: 15px;
-  right: 1%;
-}
 
 #email_error {
   color: red;
   position: absolute;
-  top: 15px;
-  right: 1%;
+
 }
 
 #phone_error {
+  color: red;
+  position: absolute;
+
+}
+
+#pass_error {
   color: red;
   position: absolute;
   top: 15px;
