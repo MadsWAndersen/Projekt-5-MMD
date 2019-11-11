@@ -244,24 +244,23 @@ ul {
   margin-bottom: 20px;
 }
 
-label {
+.listbtnlabel {
   float:left;
 }
-input {
+.listbtninp {
   display: none;
   }
 
 /*STJERNE*/
-span {
+#star {
   width: 50px;
   font-size: 40px;
   background: url(../billeder/star-regular.svg) no-repeat;
   background-size: 40px;
   background-position: center;
   color: transparent;
-  z-index: 1;
   }
-input:checked + span {
+.listbtninp:checked + #star {
   background: url(../billeder/star-solid.svg) no-repeat;
   background-size: 40px;
   background-position: center;
