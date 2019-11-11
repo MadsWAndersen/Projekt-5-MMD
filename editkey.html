@@ -44,11 +44,11 @@
       </section>
 
     <p>TAP KEY TO CONNECT</p>
-    <button type="button" name="button" class="edit-btn"><a href="connectkey.html">CONNECT KEY</a></button>
+    <button type="button" name="button" class="cancel-btn"><a href="connectkey.html">CONNECT KEY</a></button>
 
 <!-- FÅ KOORDINATER -->
     <p>GET COORDINATES FOR KEY</p>
-    <button class="edit-btn" onclick="getLocation()">GET LOCATION</button>
+    <button class="cancel-btn" onclick="getLocation()">GET LOCATION</button>
     <p id="location"></p>
     <script>
       var x = document.getElementById("location");
@@ -80,7 +80,7 @@
     //lav funktion der hedder skift farve, og så kalder den på hver knap med parameter
 
     function myFunction() {
-      document.getElementById("button").style.color = "red";
+      document.getElementById("cardholder").style.backgroundColor = "white";
       }
 
 

@@ -65,6 +65,7 @@ p {
   font-family: 'Josefin Sans', sans-serif;
   color: white;
   margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 a {
@@ -172,6 +173,7 @@ a {
   width: 100%;
 	color: white;
   margin-top: 100px;
+  margin-bottom: 20px;
 	background-image: linear-gradient(to bottom, #75DBCD 0%, #2588A7 100%);
 	border: none;
 	font-family: 'Josefin Sans', sans-serif;
@@ -184,7 +186,7 @@ a {
 	height: 50px;
   width: 100%;
 	color: white;
-  margin-top: 20px;
+  margin-top: 0px;
 	background-image: linear-gradient(to bottom, #35616F 0%, #3E6D7C 100%);
 	border: none;
 	font-family: 'Josefin Sans', sans-serif;
