@@ -107,10 +107,14 @@ body {
 }
 
 
+/*
 .notransition {
 	transition: none !important;
 	transform: none !important;
 }
+*/
+
+
 
 .inp {
 	position: relative;
@@ -178,10 +182,13 @@ body {
 }
 
 
+
 .inp input:focus + span {
 	color: #c8ccd4;
 	transform: translateY(-26px) scale(0.75);
 }
+
+.active {}
 
 /*PROFILE ICON*/
 

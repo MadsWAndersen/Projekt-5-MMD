@@ -1,30 +1,29 @@
-//cant use input forms//
 
-	
-function newFunction(){
-	
-let test = document.getElementsByClassName("label");
-	test.classList.remove("label");
-}
+var hejsa = document.getElementById("inp1");
+var hejsa2 = document.getElementById("inp2");
+var hejsa3 = document.getElementById("inp3");
+
+var bob = [hejsa, hejsa2, hejsa3];
+console.log(bob[2]);
 
 document.getElementById("inp1").readOnly=true;
+document.getElementById("inp2").readOnly=true;
+document.getElementById("inp3").readOnly=true;
 
 
-
-
-
-//click 'edit button' to edit input forms//
-
-
-//function myFunction() {
-//  document.getElementById("inp1").contentEditable = true;
-//  document.getElementById("save").innerHTML = "The p element above is now editable. Try to change its text.";
-//}
-
-
-//on click change 'edit button' to 'save/submit' button//
-
-//can now edit input forms//
-
-//on click 'save/submit' button, save changes//
-
+function editInput() {
+hejsa.classList.add("active");
+		if (hejsa.classList.contains("active")) {
+		hejsa.readOnly=false;
+			
+hejsa2.classList.add("active");
+		if (hejsa2.classList.contains("active")) {
+		hejsa2.readOnly=false;
+			
+hejsa3.classList.add("active");
+		if (hejsa3.classList.contains("active")) {
+		hejsa3.readOnly=false;
+	}
+	}
+	}
+}
