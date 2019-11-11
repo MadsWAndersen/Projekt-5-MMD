@@ -344,28 +344,35 @@ text-align: center;
 
 
 .kort1{
+  position: absolute;
   border: none;
   color: #ffffff;
   padding: 13% 12%;
   background-color: #fca249;
   border-radius: 12%;
+  z-index: -1;
 
 }
 
 .kort2{
+  position: absolute;
   border: none;
   color: #ffffff;
   padding: 17% 24%;
   background-color: #4CAF50;
 border-radius: 12%;
+z-index: 1;
 }
 
 .kort3{
+  z-index: -1;
   border: none;
   color: #ffffff;
   padding: 13% 12%;
   background-color: blue;
 border-radius: 12%;
+margin-left: -50px;
+position: absolute;
 }
 
 .dots-container{
