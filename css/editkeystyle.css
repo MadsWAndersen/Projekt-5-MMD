@@ -61,10 +61,22 @@ main {
   grid-column: 2;
 }
 
+#cardname {
+  font-size: 25px;
+  color: #ffffff;
+  background-color: transparent;
+  border-width: 0;
+  margin: 20px;
+  width: 85%;
+  text-shadow: 2px 0px 5px black;
+  text-transform: uppercase;
+}
+
 p {
   font-family: 'Josefin Sans', sans-serif;
   color: white;
   margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 a {
@@ -72,7 +84,12 @@ a {
   color: white;
 }
 
+
 /*FORMS*/
+
+#field1 {
+  text-transform: uppercase;
+}
 
 .forms{
 	grid-column: 2;
@@ -172,6 +189,7 @@ a {
   width: 100%;
 	color: white;
   margin-top: 100px;
+  margin-bottom: 20px;
 	background-image: linear-gradient(to bottom, #75DBCD 0%, #2588A7 100%);
 	border: none;
 	font-family: 'Josefin Sans', sans-serif;
@@ -184,7 +202,7 @@ a {
 	height: 50px;
   width: 100%;
 	color: white;
-  margin-top: 20px;
+  margin-top: 0px;
 	background-image: linear-gradient(to bottom, #35616F 0%, #3E6D7C 100%);
 	border: none;
 	font-family: 'Josefin Sans', sans-serif;
@@ -197,9 +215,10 @@ a {
 .color-btn {
   width: 45px;
   height: 45px;
+  margin-left: 1px;
 }
 .first {
-  background-color: white;
+  background-color: #ffffff;
 }
 .second {
   background-color: #375868;
@@ -210,8 +229,7 @@ a {
 
 .add-color-btn {
   position: absolute;
-  float: right;
-  margin-right: -10px;
+  margin-left: 5px;
   width: 45px;
   height: 45px;
   background-color: #2b3e56;
@@ -244,24 +262,24 @@ ul {
   margin-bottom: 20px;
 }
 
-label {
+.listbtnlabel {
   float:left;
+  margin-right: -10px;
 }
-input {
+.listbtninp {
   display: none;
   }
 
 /*STJERNE*/
-span {
+#star {
   width: 50px;
   font-size: 40px;
   background: url(../billeder/star-regular.svg) no-repeat;
   background-size: 40px;
   background-position: center;
   color: transparent;
-  z-index: 1;
   }
-input:checked + span {
+.listbtninp:checked + #star {
   background: url(../billeder/star-solid.svg) no-repeat;
   background-size: 40px;
   background-position: center;
@@ -273,28 +291,29 @@ input:checked + span {
     width: 50px;
     font-size: 40px;
     background: url(../billeder/file-alt-regular.svg) no-repeat;
-    background-size: 40px;
+    background-size: 30px;
     background-position: center;
     color: transparent;
     }
   #inputwork:checked + #work {
     background: url(../billeder/file-alt-solid.svg) no-repeat;
-    background-size: 40px;
+    background-size: 30px;
     background-position: center;
     color: transparent;
     }
+
 /*HOME*/
 #home {
     width: 50px;
     font-size: 40px;
     background: url(../billeder/building-regular.svg) no-repeat;
-    background-size: 40px;
+    background-size: 30px;
     background-position: center;
     color: transparent;
     }
 #inputhome:checked + #home {
     background: url(../billeder/building-solid.svg) no-repeat;
-    background-size: 40px;
+    background-size: 30px;
     background-position: center;
     color: transparent;
     }
@@ -314,6 +333,7 @@ input:checked + span {
     background-position: center;
     color: transparent;
     }
+
 /*PLANE*/
 #plane {
     width: 50px;

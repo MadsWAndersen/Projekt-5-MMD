@@ -30,26 +30,37 @@
 
   <main>
 
-    <div class="cardholder">
-
+    <div id="cardholder" class="cardholder">
+      <textarea readonly id="cardname"></textarea>
     </div>
 
+<!-- ÆNDRE NAVN -->
     <section class="forms">
 
       <section class="nameinp">
         <label for="inp" class="inp">
-    	     <input type="text" placeholder="&nbsp;">
+    	     <input id="field1" type="text" placeholder="&nbsp;" onkeyup="myFunction()">
     	      <span class="label"><div  class="fa fa-key"></div>KEY NAME</span>
     	      <span class="border"></span>
          </label>
       </section>
 
+      <script>
+        function myFunction() {
+          document.getElementById("cardname").value = document.getElementById("field1").value;
+          }
+      </script>
+
+
+<!-- CONNECT KEY -->
     <p>TAP KEY TO CONNECT</p>
-    <button type="button" name="button" class="edit-btn"><a href="connectkey.html">CONNECT KEY</a></button>
+    <button type="button" name="button" class="cancel-btn"><a href="connectkey.html">CONNECT KEY</a></button>
+
+
 
 <!-- FÅ KOORDINATER -->
     <p>GET COORDINATES FOR KEY</p>
-    <button class="edit-btn" onclick="getLocation()">GET LOCATION</button>
+    <button class="cancel-btn" onclick="getLocation()">GET LOCATION</button>
     <p id="location"></p>
     <script>
       var x = document.getElementById("location");
@@ -70,52 +81,65 @@
 
 <!-- ÆNDRE KORTFARVE -->
     <p>CARD APPEARANCE</p>
-    <button class="color-btn first"></button>
-    <button class="color-btn second"></button>
-    <button class="color-btn third"></button>
+    <button onclick="myFunctionOne()" class="color-btn first"></button>
+    <button onclick="myFunctionTwo()" class="color-btn second"></button>
+    <button onclick="myFunctionThree()" class="color-btn third"></button>
     <button class="add-color-btn"><div class="fa fa-plus"></div></button>
     <button class="add-photo-btn"><div class="fa fa-camera"></div></button>
+
     <script>
-      var button = document.querySelector("button");
 
-      button.addEventListener("click", function() {
-        const curColour = document.cardholder.style.backgroundColor;
+    //lav funktion der hedder skift farve, og så kalder den på hver knap med parameter
 
-      if (curColour === 'red') {
-        document.cardholder.style.backgroundColor = "blue";
+    function myFunctionOne() {
+      document.getElementById("cardholder").style.backgroundColor = "white";
       }
-      else {
-        document.cardholder.style.backgroundColor = "red";
+    function myFunctionTwo() {
+      document.getElementById("cardholder").style.backgroundColor = "#375868";
       }
-    });
+    function myFunctionThree() {
+      document.getElementById("cardholder").style.backgroundColor = "#54B9BD";
+      }
+
+//      var button = document.querySelector("button");
+
+//      button.addEventListener("click", function() {
+//      const curColour = document.cardholder.style.backgroundColor;
+
+//      if (curColour === 'red') {
+//        document.cardholder.style.backgroundColor = "blue";
+//      }
+//      else {
+//        document.cardholder.style.backgroundColor = "red";
+//      });
     </script>
 
 <!-- LISTER -->
     <p>LISTS</p>
     <ul>
 
-    <label for="input">
-      <input id="inputstar" type="checkbox" />
+    <label class="listbtnlabel">
+      <input id="inputstar" class="listbtninp" type="checkbox" />
       <span id="star">BN</span>
     </label>
 
-    <label for="input">
-      <input id="inputwork" type="checkbox" />
+    <label class="listbtnlabel">
+      <input id="inputwork" class="listbtninp" type="checkbox" />
       <span id="work">BN</span>
     </label>
 
-    <label for="input">
-      <input id="inputhome" type="checkbox" />
+    <label class="listbtnlabel">
+      <input id="inputhome" class="listbtninp" type="checkbox" />
       <span id="home">BN</span>
     </label>
 
-    <label for="input">
-      <input id="inputcard" type="checkbox" />
+    <label class="listbtnlabel">
+      <input id="inputcard" class="listbtninp" type="checkbox" />
       <span id="card">BN</span>
     </label>
 
-    <label for="input">
-      <input id="inputplane" type="checkbox" />
+    <label class="listbtnlabel">
+      <input id="inputplane" class="listbtninp" type="checkbox" />
       <span id="plane">BN</span>
     </label>
 
@@ -123,7 +147,6 @@
 
   <button type="button" name="button" class="save-btn">SAVE CHANGES</button>
   <button type="button" name="button" class="cancel-btn"><a href="main.html">CANCEL<a/></button>
-
 
     </section>
   </main>

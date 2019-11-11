@@ -29,33 +29,15 @@ body {
 }
 
 
-.backbtn {
-	color: white;
-	grid-column-end: 2;
-	grid-row: 1;
-	text-align: center;
-	padding-top: 33px;
-	font-size: 100%;
-}
-
-
-.profiletitle{
-	color: white;
-	grid-column-start: 2;
-	grid-row: 1;
-	font-size: 80%;
-	text-align: center;
-	padding-top: 20px;
-}
-
-
 h1{
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: lighter;
 }
 
 
-.profilepic {
+/* Logo */
+
+.logo {
 	grid-column: 2;
 	grid-row: 1;
   position:relative;
@@ -68,25 +50,6 @@ h1{
 
 .center{
   max-width: 70%;
-}
-
-
-.editbtn {
-	color: white;
-	grid-column: 2;
-	grid-row: 2;
-	margin-top: 65%;
-	margin-right: 0%;
-	margin-left: 70%;
-	z-index: 1000;
-	font-size: 35px;
-}
-
-
-.profiletxt {
-	color: white;
-	text-decoration: none;
-	text-align: left;
 }
 
 
@@ -130,6 +93,31 @@ body {
 	transform-origin: 0 0;
 	transition: all 0.2s ease;
 	text-indent: 14px;
+
+.label {
+  top: 20px;
+}
+
+}
+
+
+#email_error {
+  color: red;
+  position: absolute;
+
+}
+
+#phone_error {
+  color: red;
+  position: absolute;
+
+}
+
+#pass_error {
+  color: red;
+  position: absolute;
+  top: 15px;
+  right: 1%;
 }
 
 
@@ -198,6 +186,9 @@ body {
 	left: -15px;
 }
 
+
+
+
 /*MOBILE ICON*/
 
 .iconinp {
@@ -212,6 +203,9 @@ body {
 	top: 0px;
 	left: -13px;
 }
+
+
+
 
 /*PASSWORD ICON*/
 
