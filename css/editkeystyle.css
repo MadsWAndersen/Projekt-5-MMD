@@ -61,6 +61,17 @@ main {
   grid-column: 2;
 }
 
+#cardname {
+  font-size: 25px;
+  color: #ffffff;
+  background-color: transparent;
+  border-width: 0;
+  margin: 20px;
+  width: 85%;
+  text-shadow: 2px 0px 5px black;
+  text-transform: uppercase;
+}
+
 p {
   font-family: 'Josefin Sans', sans-serif;
   color: white;
@@ -74,6 +85,10 @@ a {
 }
 
 /*FORMS*/
+
+#field1 {
+  text-transform: uppercase;
+}
 
 .forms{
 	grid-column: 2;
@@ -201,7 +216,7 @@ a {
   height: 45px;
 }
 .first {
-  background-color: white;
+  background-color: #ffffff;
 }
 .second {
   background-color: #375868;
