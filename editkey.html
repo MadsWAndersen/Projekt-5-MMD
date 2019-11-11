@@ -30,8 +30,7 @@
 
   <main>
 
-    <div class="cardholder">
-
+    <div id="cardholder" class="cardholder">
     </div>
 
     <section class="forms">
@@ -77,6 +76,7 @@
     <button class="add-photo-btn"><div class="fa fa-camera"></div></button>
     <script>
       var button = document.querySelector("button");
+      document.getElementById(cardholder);
 
       button.addEventListener("click", function() {
         const curColour = document.cardholder.style.backgroundColor;
@@ -94,27 +94,27 @@
     <p>LISTS</p>
     <ul>
 
-    <label class="listbtnlabel" for="input">
+    <label class="listbtnlabel">
       <input id="inputstar" class="listbtninp" type="checkbox" />
       <span id="star">BN</span>
     </label>
 
-    <label for="input">
+    <label class="listbtnlabel">
       <input id="inputwork" class="listbtninp" type="checkbox" />
       <span id="work">BN</span>
     </label>
 
-    <label for="input">
+    <label class="listbtnlabel">
       <input id="inputhome" class="listbtninp" type="checkbox" />
       <span id="home">BN</span>
     </label>
 
-    <label for="input">
+    <label class="listbtnlabel">
       <input id="inputcard" class="listbtninp" type="checkbox" />
       <span id="card">BN</span>
     </label>
 
-    <label for="input">
+    <label class="listbtnlabel">
       <input id="inputplane" class="listbtninp" type="checkbox" />
       <span id="plane">BN</span>
     </label>

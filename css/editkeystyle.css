@@ -246,6 +246,7 @@ ul {
 
 .listbtnlabel {
   float:left;
+  margin-right: -10px;
 }
 .listbtninp {
   display: none;
@@ -272,28 +273,29 @@ ul {
     width: 50px;
     font-size: 40px;
     background: url(../billeder/file-alt-regular.svg) no-repeat;
-    background-size: 40px;
+    background-size: 30px;
     background-position: center;
     color: transparent;
     }
   #inputwork:checked + #work {
     background: url(../billeder/file-alt-solid.svg) no-repeat;
-    background-size: 40px;
+    background-size: 30px;
     background-position: center;
     color: transparent;
     }
+
 /*HOME*/
 #home {
     width: 50px;
     font-size: 40px;
     background: url(../billeder/building-regular.svg) no-repeat;
-    background-size: 40px;
+    background-size: 30px;
     background-position: center;
     color: transparent;
     }
 #inputhome:checked + #home {
     background: url(../billeder/building-solid.svg) no-repeat;
-    background-size: 40px;
+    background-size: 30px;
     background-position: center;
     color: transparent;
     }
@@ -313,6 +315,7 @@ ul {
     background-position: center;
     color: transparent;
     }
+
 /*PLANE*/
 #plane {
     width: 50px;
