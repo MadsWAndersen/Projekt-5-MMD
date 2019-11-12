@@ -31,8 +31,13 @@ body {
 	color: white;
 	grid-column-end: 2;
 	grid-row: 1;
-  font-size: 30px;
-  margin-left: -30px;
+	font-size: 100%;
+	padding-top: 33px;
+	margin-left: 30px;
+}
+
+a {
+	color: white;
 }
 
 .pagetitle{
@@ -40,8 +45,13 @@ body {
 	grid-row: 1;
 	font-size: 12px;
 	text-align: center;
-  padding-top: 8px;
+  padding-top: 20px;
   font-family: 'Josefin Sans';
+}
+
+h1{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: lighter;
 }
 
 main {
@@ -116,7 +126,7 @@ a {
 	font-weight: 500;
 	transform-origin: 0 0;
 	transition: all 0.2s ease;
-	text-indent: 14px;
+	text-indent: 0px;
 }
 
 .inp .border {
@@ -203,7 +213,7 @@ a {
   width: 100%;
 	color: white;
   margin-top: 0px;
-	background-image: linear-gradient(to bottom, #35616F 0%, #3E6D7C 100%);
+	background-color: #3E6D7C;
 	border: none;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 100%;
