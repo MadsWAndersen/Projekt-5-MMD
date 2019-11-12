@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,12 @@
   <script type="text/javascript" src="mainjs.js" defer></script>
   <title>Main page</title>
 </head>
+
 <body>
 
-<div class="gridwrap">
+  <div class="gridwrap">
 
-<section class="topsection">
+    <section class="topsection">
       <div id="nav-container">
         <div class="bg">
         </div>
@@ -35,65 +37,65 @@
           </ul>
         </div>
       </div>
-    <div class="plusicon">
-      <i class="fas fa-plus"></i>
-  </div>
-
-</section>
-
-
-
-<section class="carousel1">
-  <button type="button" onclick="leftSort()" class="kort1 onecolor" id="leftcard" >1
-  </button>
-  <button type="button" onclick="midSort()" class="kort2 twocolor" id="midcard">2
-  </button>
-  <button type="button" onclick="rightSort()" class="kort3 threecolor" id="rightcard">3
-  </button>
-
-</section>
-
-
-<section class="radios">
-  <label for="input1"></label>
-  <input  id="input1" name="radio" type="radio" />
-  <label for="input2"></label>
-  <input  id="input2" name="radio" type="radio" />
-  <label for="input3"></label>
-  <input  id="input3" name="radio" type="radio" />
-  <span id="slider"></span>
-
-</section>
-
-
-<section class="yourlists">
-  <h1 class="overskrift">
-    YOUR LISTS
-  </h1>
-
-<div class="list home">
-  <i class="fas fa-home"></i>
-  <p class="txtlist">HOME</p>
-</div>
-
-<div class="list school">
-  <i class="fas fa-graduation-cap"></i>
-    <p class="txtlist">SCHOOL</p>
-</div>
-
-<div class="list work">
-  <i class="fas fa-briefcase"></i>
-  <p class="txtlist">WORK</p>
-  </div>
-
-
-
-    <div class="addnew">
-      <i class="fas fa-plus-circle"></i>
-      <p class="txtlist">ADD NEW LIST</p>
+      <div class="plusicon">
+        <i class="fas fa-plus"></i>
       </div>
 
-</section>
+    </section>
+
+
+
+    <section class="carousel1">
+      <button type="button" onclick="leftSort()" class="kort1 onecolor lol" id="leftcard">1
+      </button>
+      <button type="button" onclick="midSort()" class="kort2 twocolor" id="midcard">2
+      </button>
+      <button type="button" onclick="rightSort()" class="kort3 threecolor" id="rightcard">3
+      </button>
+
+    </section>
+
+
+    <section class="radios">
+      <label for="input1"></label>
+      <input id="input1" name="radio" onclick="leftSort()" type="radio" />
+      <label for="input2"></label>
+      <input id="input2" name="radio" onclick="midSort()" type="radio" />
+      <label for="input3"></label>
+      <input id="input3" name="radio" onclick="rightSort()" type="radio" />
+      <span id="slider"></span>
+
+    </section>
+
+
+    <section class="yourlists">
+      <h1 class="overskrift">
+        YOUR LISTS
+      </h1>
+
+      <div class="list home">
+        <i class="fas fa-home"></i>
+        <p class="txtlist">HOME</p>
+      </div>
+
+      <div class="list school">
+        <i class="fas fa-graduation-cap"></i>
+        <p class="txtlist">SCHOOL</p>
+      </div>
+
+      <div class="list work">
+        <i class="fas fa-briefcase"></i>
+        <p class="txtlist">WORK</p>
+      </div>
+
+
+
+      <div class="addnew">
+        <i class="fas fa-plus-circle"></i>
+        <p class="txtlist">ADD NEW LIST</p>
+      </div>
+
+    </section>
 
 
 
@@ -104,6 +106,7 @@
 
 
 
-</div>
+  </div>
 </body>
+
 </html>
