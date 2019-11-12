@@ -2,6 +2,7 @@
 var hejsa = document.getElementById("inp1");
 var hejsa2 = document.getElementById("inp2");
 var hejsa3 = document.getElementById("inp3");
+var editBtn = document.getElementById("edit-btn");
 
 var bob = [hejsa, hejsa2, hejsa3];
 console.log(bob[2]);
@@ -12,6 +13,10 @@ document.getElementById("inp3").readOnly=true;
 
 
 function editInput() {
+	editBtn.classList.add("editable");
+	if (editBtn.classList.contains("editable")) {
+		editBtn.classList.remove("editable-btn");
+
 hejsa.classList.add("active");
 		if (hejsa.classList.contains("active")) {
 		hejsa.readOnly=false;
@@ -26,6 +31,7 @@ hejsa3.classList.add("active");
 	}
 	}
 	}
+}
 }
 
 

@@ -250,20 +250,38 @@ body {
 
 #edit-btn {
 
-	grid-column: 2;
-	grid-row: 4;
-	display: block;
-	height: 44px;
-	color: white;
-	background-image: linear-gradient(to bottom, #75DBCD 0%, #2588A7 100%);
-	border: none;
-	margin-top: 18%;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 80%;
+}
+
+.editable-btn{
+  grid-column: 2;
+  grid-row: 4;
+  display: block;
+  height: 44px;
+  color: white;
+  background-image: linear-gradient(to bottom, #75DBCD 0%, #2588A7 100%);
+  border: none;
+  margin-top: 18%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 80%;
   outline: 0;
 }
 
-#edit-btn:focus{
+.editable {
+  background-image: linear-gradient(to bottom, #75DBCD 100%, #2588A7 0%);
+  font-weight: bold;
+  grid-column: 2;
+  grid-row: 4;
+  display: block;
+  height: 44px;
+  color: white;
+  border: none;
+  margin-top: 18%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 80%;
+  outline: 0;
+}
+
+/* #edit-btn:focus{
     background-image: linear-gradient(to bottom, #75DBCD 100%, #2588A7 0%);
     font-weight: bold;
 }
@@ -271,4 +289,4 @@ body {
 #edit-btn:active{
     background-image: linear-gradient(to bottom, #75DBCD 100%, #2588A7 0%);
     font-weight: bold;
-}
+} */
