@@ -2,6 +2,7 @@
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
   color: #ffffff;
+  outline: none;
 
 }
 
@@ -54,6 +55,7 @@ body{
 #nav-container:focus-within .bg {
   visibility: visible;
   opacity: .45;
+  outline: none;
 }
 #nav-container * {
   visibility: visible;
