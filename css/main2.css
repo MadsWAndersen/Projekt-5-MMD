@@ -1,26 +1,24 @@
-*{
+* {
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
   color: #ffffff;
   outline: none;
-
 }
 
-body{
-    background: #2E3E54;
-    margin: 0;
-    padding: 0;
-
+body {
+  background: #2E3E54;
+  margin: 0;
+  padding: 0;
 }
 
-.gridwrap{
+.gridwrap {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 1fr 2fr 0.5fr 3fr;
   /* border: 1px solid green; */
 }
 
-.topsection{
+.topsection {
   display: grid;
   grid-column: 1/-1;
   grid-row: 1;
@@ -28,20 +26,17 @@ body{
   grid-template-rows: 1fr;
   /* border: 1px solid #000; */
   font-size: 36px;
-
 }
+
 /* burger-menu */
-
-
-
 #nav-container {
   position: fixed;
   height: 120%;
   width: 100%;
   pointer-events: none;
-  display:grid;
-
+  display: grid;
 }
+
 #nav-container .bg {
   position: absolute;
   left: 0;
@@ -52,17 +47,19 @@ body{
   transition: .5s;
   background: #000;
 }
+
 #nav-container:focus-within .bg {
   visibility: visible;
   opacity: .45;
   outline: none;
 }
+
 #nav-container * {
   visibility: visible;
 }
 
 .navbutton {
-  z-index: 100000!important;
+  z-index: 100000 !important;
   grid-column: 1;
   display: inline-block;
   -webkit-appearance: none;
@@ -72,12 +69,13 @@ body{
   height: 70px;
   width: 30px;
   cursor: pointer;
-  pointer-events:auto;
+  pointer-events: auto;
   margin-top: 5%;
   margin-left: 5%;
   touch-action: manipulation;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 .icon-bar {
   display: block;
   width: 100%;
@@ -85,21 +83,25 @@ body{
   background: #fff;
   transition: .3s;
 }
-.icon-bar + .icon-bar {
+
+.icon-bar+.icon-bar {
   margin-top: 5px;
 }
 
 #nav-container:focus-within .navbutton {
   pointer-events: none;
 }
+
 #nav-container:focus-within .icon-bar:nth-of-type(1) {
-  transform: translate3d(0,8px,0) rotate(45deg);
+  transform: translate3d(0, 8px, 0) rotate(45deg);
 }
+
 #nav-container:focus-within .icon-bar:nth-of-type(2) {
   opacity: 0;
 }
+
 #nav-container:focus-within .icon-bar:nth-of-type(3) {
-  transform: translate3d(0,-8px,0) rotate(-45deg);
+  transform: translate3d(0, -8px, 0) rotate(-45deg);
 }
 
 #nav-content {
@@ -114,7 +116,7 @@ body{
   left: 0;
   height: calc(100% - 70px);
   background: rgba(0, 0, 0, 0.8);
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transform: translateX(-101%);
   transition: transform .3s;
   will-change: transform;
@@ -125,26 +127,25 @@ body{
   grid-column: 1/-1;
   height: 100%;
   margin-top: 80%;
-  margin-left: 30%!important;
+  margin-left: 30% !important;
   pointer-events: auto;
 }
 
-.logout{
+.logout {
   grid-column: 1/-1;
   height: 100%;
   margin-top: 30%;
-  margin-left: 30%!important;
+  margin-left: 30% !important;
   pointer-events: auto;
 }
 
-.fa-user-circle{
+.fa-user-circle {
   grid-column: 2;
   grid-row: 2;
   margin-top: -15%;
   margin-left: -10%;
   margin-bottom: 20%;
   font-size: 100px;
-
 }
 
 #nav-content li a {
@@ -156,18 +157,16 @@ body{
   transition: color .1s;
 }
 
-
 #nav-content li:hover {
   color: #BF7497;
 }
 
-.fa-li{
+.fa-li {
   font-size: 10px;
 }
 
-#nav-content li .fa-graduation-cap{
+#nav-content li .fa-graduation-cap {
   font-size: 12px;
-
 }
 
 #nav-container:focus-within #nav-content {
@@ -203,28 +202,16 @@ img {
   width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-.plusicon{
+.plusicon {
   display: inline-block;
   grid-column: 2;
   margin-top: 7%;
   margin-right: 7%;
-justify-self: end;
-font-size: 30px;
-
+  justify-self: end;
+  font-size: 30px;
 }
 
 /* NEW CAROUSEL */
-
-
 .carousel {
   margin: 0;
   padding: 0;
@@ -245,41 +232,29 @@ font-size: 30px;
   border: 1px solid red;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CAROUSEL */
-
-.carousel1{
+.carousel1 {
   display: grid;
-grid-column: 1/-1;
-grid-template-rows: 1fr;
-grid-template-columns: 1fr 2fr 1fr;
-margin-top: 5%;
-overflow: hidden;
-text-align: center;
-align-items: center;
-transition: all 1s;
-transition: 0.8s left 0.95s ease-in-out;
+  grid-column: 1/-1;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 5%;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  transition: all 1s;
+  transition: 0.8s left 0.95s ease-in-out;
 }
 
+#leftcard, #midcard, #rightcard {
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
+}
 
-.kort1{
-
+.kort1 {
   width: 150px;
   height: 100px;
   grid-column: 1;
@@ -288,110 +263,85 @@ transition: 0.8s left 0.95s ease-in-out;
   border: none;
   color: #ffffff;
   border-radius: 8%;
-  z-index: 1;
+  z-index: 2;
   margin-left: -10%;
   margin-right: -65%;
-  transition: transform 1s;
-  animation-timing-function: ease-in-out;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-  transition: 0.2s left 0.05s ease-in-out;
-  overflow: hidden;
-  -webkit-transition-duration: 0.8s;
-
-
 }
 
-.kort2{
+.kort2 {
   align-content: center;
   width: 200px;
-  height: 170px;
+  height: 150px;
   grid-column: 2;
   grid-row: 1;
   border: none;
   color: #ffffff;
   border-radius: 8%;
   z-index: 5;
-transition: transform 1s;
-animation-timing-function: ease-in-out;
-animation-duration: 0.3s;
-animation-fill-mode: forwards;
-transition: 0.2s left 0.05s ease-in-out;
-margin: 0;
-overflow: hidden;
+  margin: 0;
 }
 
-.kort3{
+.kort3 {
   width: 150px;
   height: 100px;
   grid-column: 3;
   position: relative;
   border: none;
   color: #ffffff;
-  /* padding: 13px 20px; */
   border-radius: 8%;
-  z-index: -2;
+  z-index: 1;
   margin-right: -10%;
-  margin-left: -10%;
-transition: all 1s;
-animation-timing-function: ease-in-out;
-animation-duration: 0.3s;
-animation-fill-mode: forwards;
-transition: 0.2s left 0.05s ease-in-out;
+  margin-left: -65%;
 }
 
-.onecolor{
+.onecolor {
   background-color: #fca249;
 }
 
-.twocolor{
-background-color: #4CAF50;
+.twocolor {
+  background-color: #4CAF50;
 }
 
-.threecolor{
-background-color: blue;
+.threecolor {
+  background-color: blue;
 }
-
 
 /* LIST */
-
-.yourlists{
+.yourlists {
   grid-column: 1/-1;
   grid-row: 4;
   margin-top: -2%;
   /* border: 1px solid #000; */
 }
 
-.overskrift{
-font-size: 20px;
-font-weight: 300;
-margin-bottom: 5%;
-margin-left: 5%;
+.overskrift {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 5%;
+  margin-left: 5%;
 }
 
-
-.list{
-background-color: #62bdba;
-min-height: 60px;
-margin-top: 2%;
-width: 96%;
-margin-left: 2%;
-line-height: 60px;
-color: #ffffff;
-
+.list {
+  background-color: #62bdba;
+  min-height: 60px;
+  margin-top: 2%;
+  width: 96%;
+  margin-left: 2%;
+  line-height: 60px;
+  color: #ffffff;
 }
 
-.list p{
-    display: inline-block;
-    margin-left: 2%;
+.list p {
+  display: inline-block;
+  margin-left: 2%;
 }
 
-.list i{
+.list i {
   margin-left: 3%;
   font-size: 16px;
 }
 
-.addnew{
+.addnew {
   background-color: #375868;
   min-height: 60px;
   margin-top: 2%;
@@ -401,66 +351,31 @@ color: #ffffff;
   color: #ffffff;
 }
 
-.addnew p{
+.addnew p {
   display: inline-block;
   margin-left: 2%;
 }
 
-.addnew i{
+.addnew i {
   margin-left: 3%;
   font-size: 16px;
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* SLIDER */
-
-
-
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background: teal;
-  color: #fff;
-  padding-bottom: 10%;
-} */
-/* h1 {
-  text-align: center;
-  margin: 20% 0 5%;
-  font-family: verdana;
-  font-weight: 100;
-} */
 .radios {
   grid-column: 2;
   position: relative;
   width: 50%;
   margin: 0 auto;
   text-align: center;
-
 }
+
 input[type="radio"] {
   position: absolute;
   right: 1000%;
 }
+
 label {
-  display:inline-block;
+  display: inline-block;
   width: 10px;
   padding-bottom: 10px;
   margin: 0 2.5%;
@@ -468,6 +383,7 @@ label {
   border-radius: 50%;
   cursor: pointer;
 }
+
 #slider {
   position: absolute;
   left: 44%;
@@ -483,32 +399,40 @@ label {
   animation-fill-mode: forwards;
   transition: 0.2s left 0.05s ease-in-out;
 }
-#input1:checked ~ #slider {
+
+#input1:checked~#slider {
   animation-name: input1;
   left: 25%;
 }
-#input2:checked ~ #slider {
+
+#input2:checked~#slider {
   animation-name: input2;
   left: 44%;
 }
-#input3:checked ~ #slider {
+
+#input3:checked~#slider {
   animation-name: input3;
   left: 61.5%;
 }
 
 @keyframes input1 {
+
   30%,
   70% {
     transform: scale(0.5);
   }
 }
+
 @keyframes input2 {
+
   30%,
   70% {
     transform: scale(0.5);
   }
 }
+
 @keyframes input3 {
+
   30%,
   70% {
     transform: scale(0.5);
