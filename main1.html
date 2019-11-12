@@ -15,7 +15,6 @@
 <div class="gridwrap">
 
 <section class="topsection">
-
       <div id="nav-container">
         <div class="bg">
         </div>
@@ -36,27 +35,26 @@
           </ul>
         </div>
       </div>
-
-
     <div class="plusicon">
       <i class="fas fa-plus"></i>
   </div>
+
 </section>
 
 
 
 <section class="carousel1">
-  <button type="button" class="kort1 slides" id="onecolor">
+  <button type="button" onclick="leftSort()" class="kort1 onecolor" id="leftcard" >1
   </button>
-  <button type="button" class="kort2 slides" id="twocolor">
+  <button type="button" onclick="midSort()" class="kort2 twocolor" id="midcard">2
   </button>
-  <button type="button" class="kort3 slides" id="threecolor">
+  <button type="button" onclick="rightSort()" class="kort3 threecolor" id="rightcard">3
   </button>
 
 </section>
 
-<section class="radios">
 
+<section class="radios">
   <label for="input1"></label>
   <input  id="input1" name="radio" type="radio" />
   <label for="input2"></label>
@@ -94,6 +92,7 @@
       <i class="fas fa-plus-circle"></i>
       <p class="txtlist">ADD NEW LIST</p>
       </div>
+
 </section>
 
 
