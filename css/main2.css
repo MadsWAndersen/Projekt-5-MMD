@@ -29,59 +29,6 @@ body{
   font-size: 36px;
 
 }
-
-/* .burgermenu{
-display: inline-block;
-margin-top: 5%;
-margin-left: 5%;
-position: relative;
-top: 20%;
-left: 10%;
-transform: translate(-50%, -50%);
-width: 80px;
-height: 80px;
-cursor: pointer;
-
-}
-
-.hamburger1{
-  width: 40%;
-  height: 6%;
-  background: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0.5px 2px rgba(0, 0, 0, .2);
-  transition: 0.5s;
-  border-radius: 2px;
-}
-
-.hamburger1:before,
-.hamburger1:after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  box-shadow: 0 0.5px 2px rgba(0, 0, 0, .2);
-  transition: 0.5s;
-  border-radius: 2px;
-}
-
-.hamburger1:before{
-top: -12px;
-
-}
-
-.hamburger1:after{
-top: 12px;
-
-} */
-
-
-
-
 /* burger-menu */
 
 
@@ -112,7 +59,7 @@ top: 12px;
   visibility: visible;
 }
 
-.button {
+.navbutton {
   z-index: 100000!important;
   grid-column: 1;
   display: inline-block;
@@ -140,7 +87,7 @@ top: 12px;
   margin-top: 5px;
 }
 
-#nav-container:focus-within .button {
+#nav-container:focus-within .navbutton {
   pointer-events: none;
 }
 #nav-container:focus-within .icon-bar:nth-of-type(1) {
@@ -275,25 +222,6 @@ font-size: 30px;
 
 /* NEW CAROUSEL */
 
-.wrapper {
-  display:grid;
-  grid-column: 1/-1;
-  grid-row: 2;
-  height: 220px;
-  width: 375px;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-.button-wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-}
 
 .carousel {
   margin: 0;
@@ -337,63 +265,76 @@ font-size: 30px;
 .carousel1{
 grid-column: 1/-1;
 grid-row: 2;
-margin-top: 10%;
-/* border: 1px solid red; */
+grid-template-columns: 1fr 2fr 1fr;
+margin-top: 5%;
+overflow: hidden;
 text-align: center;
 }
 
 
 .kort1{
-  position: absolute;
+  grid-column: 1;
+  position: relative;
   border: none;
   color: #ffffff;
-  padding: 13% 12%;
-  background-color: #fca249;
-  border-radius: 12%;
+  padding: 13% 20%;
+  border-radius: 8%;
   z-index: -1;
+  margin-left: -20%;
+  margin-right: -10%;
+  transition: transform 1s;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  transition: 0.2s left 0.05s ease-in-out;
+
 
 }
 
 .kort2{
-  position: absolute;
+  grid-column: 2;
+  /* position: relative; */
   border: none;
   color: #ffffff;
-  padding: 17% 24%;
-  background-color: #4CAF50;
-border-radius: 12%;
+  padding: 20% 28%;
+border-radius: 8%;
 z-index: 1;
+transition: transform 1s;
+animation-timing-function: ease-in-out;
+animation-duration: 0.3s;
+animation-fill-mode: forwards;
+transition: 0.2s left 0.05s ease-in-out;
 }
 
 .kort3{
+  grid-column: 3;
+  position: relative;
   z-index: -1;
   border: none;
   color: #ffffff;
-  padding: 13% 12%;
-  background-color: blue;
-border-radius: 12%;
-margin-left: -50px;
-position: absolute;
+  padding: 13% 20%;
+border-radius: 8%;
+margin-right: -20%;
+margin-left: -10%;
+transition: transform 1s;
+animation-timing-function: ease-in-out;
+animation-duration: 0.3s;
+animation-fill-mode: forwards;
+transition: 0.2s left 0.05s ease-in-out;
 }
 
-.dots-container{
-  grid-column: 2;
-  grid-row: 3;
-  text-align: center;
-  margin-top: -12%;
-  /* border: 1px solid yellow; */
-
+#onecolor{
+  background-color: #fca249;
 }
 
-.dots{
-    height: 8px;
-    width: 8px;
-    display: inline-block;
-    background-color: #f6f6f6;
-    opacity: 0.2;
-    border-radius: 50%;
-    margin-left: 3px;
-    margin-right: 3px;
+#twocolor{
+background-color: #4CAF50;
 }
+
+#threecolor{
+background-color: blue;
+}
+
 
 /* LIST */
 
@@ -413,7 +354,6 @@ margin-left: 5%;
 
 
 .list{
-
 background-color: #62bdba;
 min-height: 60px;
 margin-top: 2%;
@@ -495,6 +435,8 @@ body {
   position: relative;
   width: 50%;
   margin: 0 auto;
+  text-align: center;
+  margin-top: -8%;
 }
 input[type="radio"] {
   position: absolute;
@@ -511,7 +453,7 @@ label {
 }
 #slider {
   position: absolute;
-  left: 0%;
+  left: 44%;
   top: 0;
   width: 6px;
   padding-bottom: 6px;
@@ -526,23 +468,15 @@ label {
 }
 #input1:checked ~ #slider {
   animation-name: input1;
-  left: 0;
+  left: 25%;
 }
 #input2:checked ~ #slider {
   animation-name: input2;
-  left: 21px;
+  left: 44%;
 }
 #input3:checked ~ #slider {
   animation-name: input3;
-  left: 41px;
-}
-#input4:checked ~ #slider {
-  animation-name: input4;
-  left: 62px;
-}
-#input5:checked ~ #slider {
-  animation-name: input5;
-  left: 83px;
+  left: 61.5%;
 }
 
 @keyframes input1 {
@@ -558,18 +492,6 @@ label {
   }
 }
 @keyframes input3 {
-  30%,
-  70% {
-    transform: scale(0.5);
-  }
-}
-@keyframes input4 {
-  30%,
-  70% {
-    transform: scale(0.5);
-  }
-}
-@keyframes input5 {
   30%,
   70% {
     transform: scale(0.5);
