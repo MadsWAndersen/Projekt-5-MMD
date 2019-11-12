@@ -6,6 +6,7 @@
 }
 
 
+
 .wrapper {
 	display: grid;
 	grid-template-columns: 1fr 5fr 1fr;
@@ -15,7 +16,7 @@
 
 
 main{
-	grid-column: 1/-1; 
+	grid-column: 1/-1;
 }
 
 
@@ -82,7 +83,7 @@ h1{
 }
 
 
-.profiletxt { 
+.profiletxt {
 	color: white;
 	text-decoration: none;
 	text-align: left;
@@ -242,7 +243,13 @@ body {
 
 /*BUTTON*/
 
+.button {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
 #edit-btn {
+
 	grid-column: 2;
 	grid-row: 4;
 	display: block;
@@ -253,5 +260,15 @@ body {
 	margin-top: 18%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 80%;
+  outline: 0;
 }
 
+#edit-btn:focus{
+    background-image: linear-gradient(to bottom, #75DBCD 100%, #2588A7 0%);
+    font-weight: bold;
+}
+
+#edit-btn:active{
+    background-image: linear-gradient(to bottom, #75DBCD 100%, #2588A7 0%);
+    font-weight: bold;
+}

@@ -104,20 +104,21 @@ body {
 #email_error {
   color: red;
   position: absolute;
+  top: 33px;
 
 }
 
 #phone_error {
   color: red;
   position: absolute;
+  top: 33px;
 
 }
 
 #pass_error {
   color: red;
   position: absolute;
-  top: 15px;
-  right: 1%;
+  top: 33px;
 }
 
 
@@ -140,6 +141,7 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 	padding: 12px 0 0px;
 	height: 60px;
+  word-spacing: 20%;
 	font-size: 16px;
 	border-bottom: 1px solid white;
 	background: none;

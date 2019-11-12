@@ -15,11 +15,11 @@ function editInput() {
 hejsa.classList.add("active");
 		if (hejsa.classList.contains("active")) {
 		hejsa.readOnly=false;
-			
+
 hejsa2.classList.add("active");
 		if (hejsa2.classList.contains("active")) {
 		hejsa2.readOnly=false;
-			
+
 hejsa3.classList.add("active");
 		if (hejsa3.classList.contains("active")) {
 		hejsa3.readOnly=false;
@@ -27,6 +27,11 @@ hejsa3.classList.add("active");
 	}
 	}
 }
+
+
+
+
+
 
 
 //var hejsa = document.getElementById("inp1", "inp2", "inp3");
