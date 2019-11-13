@@ -35,6 +35,7 @@ body {
   width: 100%;
   pointer-events: none;
   display: grid;
+  z-index: 1000 !important;
 }
 
 #nav-container .bg {
@@ -52,6 +53,7 @@ body {
   visibility: visible;
   opacity: .45;
   outline: none;
+  display: block;
 }
 
 #nav-container * {
@@ -59,7 +61,6 @@ body {
 }
 
 .navbutton {
-  z-index: 100000 !important;
   grid-column: 1;
   display: inline-block;
   -webkit-appearance: none;
@@ -82,6 +83,8 @@ body {
   height: 3px;
   background: #fff;
   transition: .3s;
+  z-index: 1001 !important;
+  position: relative;
 }
 
 .icon-bar+.icon-bar {
@@ -121,6 +124,7 @@ body {
   transition: transform .3s;
   will-change: transform;
   contain: paint;
+  z-index: 1000 !important;
 }
 
 .menuitems {
@@ -129,14 +133,18 @@ body {
   margin-top: 80%;
   margin-left: 30% !important;
   pointer-events: auto;
+  position: absolute;
 }
 
 .logout {
   grid-column: 1/-1;
+  grid-row: 2;
   height: 100%;
-  margin-top: 30%;
+  margin-top: -90%;
   margin-left: 30% !important;
   pointer-events: auto;
+  position: absolute;
+
 }
 
 .fa-user-circle {
@@ -211,29 +219,9 @@ img {
   font-size: 30px;
 }
 
-/* NEW CAROUSEL */
-.carousel {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: 100%;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  transition: all 1s ease;
-}
-
-.card {
-  background: black;
-  min-width: 150px;
-  height: 200px;
-  margin-right: -1rem;
-  display: inline-block;
-  border: 1px solid red;
-}
-
 /* CAROUSEL */
 .carousel1 {
+  position: relative;
   display: grid;
   grid-column: 1/-1;
   grid-template-rows: 1fr;
@@ -242,16 +230,12 @@ img {
   overflow: hidden;
   text-align: center;
   align-items: center;
-  transition: all 1s;
   transition: 0.8s left 0.95s ease-in-out;
 }
 
 #leftcard, #midcard, #rightcard {
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
   transition: all .3s ease-in-out;
+
 }
 
 .kort1 {
@@ -295,7 +279,7 @@ img {
 }
 
 .onecolor {
-  background-color: #fca249;
+  background-color: red;
 }
 
 .twocolor {
@@ -305,6 +289,13 @@ img {
 .threecolor {
   background-color: blue;
 }
+
+.btnClick{
+  background-color: #fca249
+  width: 500px;
+}
+
+
 
 /* LIST */
 .yourlists {
@@ -420,6 +411,7 @@ label {
   30%,
   70% {
     transform: scale(0.5);
+    background: #d3d3d3;
   }
 }
 
@@ -428,6 +420,7 @@ label {
   30%,
   70% {
     transform: scale(0.5);
+    background: #d3d3d3;
   }
 }
 
@@ -436,5 +429,6 @@ label {
   30%,
   70% {
     transform: scale(0.5);
+    background: #d3d3d3;
   }
 }
