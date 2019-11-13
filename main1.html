@@ -45,16 +45,55 @@
 
 
 
-    <section class="carousel1">
+    <section class="carousel">
       <button type="button" onclick="leftSort()" class="kort1 onecolor lol" id="leftcard">1
       </button>
       <button type="button" onclick="midSort()" class="kort2 twocolor" id="midcard">2
       </button>
       <button type="button" onclick="rightSort()" class="kort3 threecolor" id="rightcard">3
       </button>
-
+      <div class="editBtn invis" id="btnOne">One
+      </div>
+      <div class="editBtn" id="btnTwo">Two
+      </div>
+      <div class="editBtn invis" id="btnThree">
+        Three
+      </div>
     </section>
+    <div id="ddContainer">
+      <div class="ddBackground">
+      </div>
+      <div class="hiddenContainer" tabindex="0">
+        <div class="dropdown">
 
+        </div>
+      </div>
+      <div id="ddContent" tabindex="0">
+        <div class="editKnap">
+        <p class="ddtext">EDIT</p>
+        </div>
+        <div class="shareKnap">
+        <p class="ddtext">SHARE</p>
+        </div>
+        <div class="deleteKnap">
+        <p class="ddtext">DELETE</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="invis" id="dropdown" tabindex="0">
+      <div class="ddbg">
+      </div>
+      <div class="ddCard editKnap">
+      <p class="ddtext">EDIT</p>
+      </div>
+      <div class="ddCard shareKnap">
+      <p class="ddtext">SHARE</p>
+      </div>
+      <div class="ddCard deleteKnap">
+      <p class="ddtext">DELETE</p>
+      </div>
+    </div> -->
 
     <section class="radios">
       <label for="input1"></label>
@@ -69,6 +108,7 @@
 
 
     <section class="yourlists">
+
       <h1 class="overskrift">
         YOUR LISTS
       </h1>

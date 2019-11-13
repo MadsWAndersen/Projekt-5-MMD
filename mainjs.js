@@ -1,12 +1,18 @@
 let left = document.getElementById("leftcard");
 let mid = document.getElementById("midcard");
 let right = document.getElementById("rightcard");
+let one = document.getElementById("btnOne");
+let two = document.getElementById("btnTwo");
+let three = document.getElementById("btnThree");
 
 
 
 function leftSort() {
   function leftCheck() {
     document.getElementById("input1").checked = true;
+    one.classList.remove("invis");
+    two.classList.add("invis");
+    three.classList.add("invis");
   }
 
   leftCheck();
@@ -32,6 +38,9 @@ function leftSort() {
 function midSort() {
   function midCheck() {
     document.getElementById("input2").checked = true;
+    one.classList.add("invis");
+    two.classList.remove("invis");
+    three.classList.add("invis");
   }
   midCheck();
   left.classList.add("kort1");
@@ -56,6 +65,9 @@ function midSort() {
 function rightSort() {
   function rightCheck() {
     document.getElementById("input3").checked = true;
+    one.classList.add("invis");
+    two.classList.add("invis");
+    three.classList.remove("invis");
   }
 
   rightCheck();
@@ -77,9 +89,58 @@ function rightSort() {
   right.cssText = "-webkit-transition: all 0.5s ease-in-out;";
 }
 
+
+
 left.addEventListener('click', leftSort);
 mid.addEventListener('click', midSort);
 right.addEventListener('click', rightSort);
+
+// let dropdown = document.getElementById('dropdown')
+//
+// function showMenu(){
+//  dropdown.classList.toggle("invis")
+// }
+//
+// one.addEventListener('click', showMenu);
+// two.addEventListener('click', showMenu);
+// three.addEventListener('click', showMenu);
+
+
+
+
+
+// Man kan også lave transition på den her måde, men så går den ikke væk automatisk. Se focus:within.
+let dropExp = document.getElementById("dropdownExp");
+let expColor = document.getElementById("ddContent");
+
+function expand(){
+  dropExp.style.height = "400px";
+  dropExp.style.marginTop = "40%";
+  expColor.style.backgroundColor = "#000";
+}
+
+
+// two.addEventListener('click', showMenu);
+// three.addEventListener('click', showMenu);
+
+//
+//   function editTwo() {
+//
+//     if (radioTwo.checked == true) {
+//       one.classList.add("invis");
+//       two.classList.remove("invis");
+//       three.classList.add("invis");
+//     }
+//
+//     function editThree() {
+//
+//       if (radioThree.checked == true) {
+//         one.classList.add("invis");
+//         two.classList.add("invis");
+//         three.classList.remove("invis");
+//       }
+// }
+
 
 
 
