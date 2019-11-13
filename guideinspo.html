@@ -31,6 +31,7 @@
         <img src="HoC-logo.svg" alt="" id="logo" />
         <nav class="navWrapper">
           <ul>
+			<li><a href="#atomicSection">ATOMIC DESIGN</a></li>
             <li><a href="#farveSection">COLORS</a></li>
             <li><a href="#logoSection">LOGO</a></li>
             <li><a href="#knapperSection">BUTTONS</a></li>
@@ -42,7 +43,7 @@
           </ul>
         </nav>
       </aside>
-      <main class="mainWrapper">
+      <main class="mainWrapper">  
         <section class="landingSection">
           <h1>NHS GROUP</h1>
           <h2>Gruppe 3</h2>
@@ -53,6 +54,14 @@ that was created for NHS Group. <br>
 Here you can find everything you need concerning both design & code.
           </p>
         </section>
+		  
+		  <section class="atomicSection" id="atomicSection">
+		  <h1>ATOMIC DESIGN</h1>
+		  
+		  </section>
+		  
+		  
+		  
         <section class="farveSection" id="farveSection">
           <h1>COLORS</h1>
           <article class="color" style="background-color: #2B3E56;">
@@ -103,74 +112,69 @@ Here you can find everything you need concerning both design & code.
         </section>
         <section class="logoSection" id="logoSection">
           <h1>LOGO</h1>
-          <h3>Logo on a white background</h3>
-          <hr />
-          <img src="HoC-logo.svg" alt="" id="logo" />
           <h3>Logo on a blue background</h3>
           <hr />
           <div class="logoHvid">
-            <img src="HoC_logo_white.svg" alt="" id="logo" />
+            <img src="Billeder/LOGONAVN.png" alt="" id="logo"/>
           </div>
         </section>
+		  
+<!--BUTTONS-->		  
         <section class="knapperSection" id="knapperSection">
           <article>
             <h1>BUTTONS</h1>
             <h3>Standard button</h3>
             <hr />
             <p>Standard button used for most of the buttons</p>
-            <button type="button" class="standardBtn">Button</button>
+			  
+            <button type="button" class="standardBtn">BUTTON</button>
+			  
             <h3>Standard button on a blue background</h3>
             <hr />
-            <button type="button" class="standardBtn blue">Button</button>
-
+			  
+            <button type="button" class="standardBtn blue">BUTTON</button>
+			
+			  
             <h3>NAV links which looks like buttons</h3>
             <hr />
             <li class="navList"><a href="#">Navigation</a></li>
           </article>
-          <article>
-            <h2>Production tools</h2>
+			
+          <article class="ptools">
+            <h2>PRODUCTION TOOLS</h2>
             <h3>Standard button</h3>
             <hr />
             <div class="codeEmbed">
-              <code
-                >&lt;button type="button"
-                class="standardBtn">Button&lt;/button></code
-              >
+              <code>&lt;button type="button"
+                class="standardBtn">Button&lt;/button></code>
             </div>
             <h3>Standard button on a blue background</h3>
             <hr />
             <div class="codeEmbed">
-              <code
-                >&lt;button type="button" class="standardBtn
-                blue">Button&lt;/button></code
-              >
+              <code>&lt;button type="button" class="standardBtn
+                blue">Button&lt;/button></code>
             </div>
             <h3>NAV links which looks like buttons</h3>
             <hr />
             <div class="codeEmbed">
-              <code
-                >&lt;li class="navList">&lt;a
-                href="#">Navigation&lt;/a>&lt;/li></code
-              >
+              <code>&lt;li class="navList">&lt;a
+                href="#">Navigation&lt;/a>&lt;/li></code>
             </div>
           </article>
         </section>
         <section class="typoSection" id="typoSection">
-          <h1>TYPOGRAPHY</h1>
+          <h1 class="tpg">TYPOGRAPHY</h1>
           <article>
-            <h1 style="font-size: 30px;">_______ - Regular</h1>
-            <h1 style="font-size: 30px;">Is used on all headlines - Example:<br>
+            <h1 style="font-size: 40px;">'Josefin Sans', sans-serif - Regular</h1>
+			<p>'Josefin Sans', sans-serif is a google font and is used on all headlines as well as paragrah text.</p>
+            <h1 style="font-size: 25px;">Example of a headline (size 25px):<br><br>
 
-HEADLINE</h1>
-            <p>______ is a google font and is used on all headlines.</p>
-            <a href="https://fonts.google.com/specimen/Roboto" target="_blank">
-              <button class="standardBtn">Download _____ here</button></a
-            >
+
+THIS IS A HEADLINE</h1>
           </article>
           <article>
-            <h1 style="font-size: 30px;">______ - Regular</h1>
-            <h1 style="font-size: 30px;">
-              Is used on all paragraphs - Example:
+            <h1 style="font-size: 25px;">
+              Example of a paragraph (size 20px):
             </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -181,8 +185,8 @@ HEADLINE</h1>
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <a href="https://fonts.google.com/specimen/Abel" target="_blank">
-              <button class="standardBtn">Download ____ here</button></a
+            <a href="https://fonts.google.com/specimen/Josefin+Sans" target="_blank">
+              <button class="standardBtn">Download 'Josefin Sans', sans-serif here</button></a
             >
           </article>
         </section>
@@ -229,17 +233,17 @@ HEADLINE</h1>
           </h3>
           <p>
             We have used:
-            <a href="https://fontawesome.com/icons?d=gallery">fontawesome</a>.
-            It's free and has a wide library of icons to choose from.
+            <a href="https://fontawesome.com/icons?d=gallery">FONTAWESOME</a>.
+            It's free and it has a wide library of icons to choose from.
           </p>
           <table class="iconTable">
             <tr>
-              <th style="font-weight: bold; font-size: 25px;">Class name:</th>
-              <th style="font-weight: bold; font-size: 25px;">Image</th>
+              <th style="font-size: 25px;">CLASS NAME:</th>
+              <th style="font-size: 25px;">IMAGE</th>
             </tr>
             <tr>
               <th>fas fa-search</th>
-              <th><i class="fas fa-search"></i></th>
+              <th><i class="fas fa-search"></i></th>	
             </tr>
             <tr>
               <th>fas fa-user-circle</th>
