@@ -40,23 +40,34 @@
 
       <section class="nameinp">
         <label for="inp" class="inp">
-    	     <input id="field1" type="text" placeholder="&nbsp;" onkeyup="myFunction()">
-    	      <span class="label"><div  class="fa fa-key"></div>KEY NAME</span>
+    	     <input id="inputfelt" type="text" placeholder="&nbsp;" onkeyup="myFunction()">
+    	      <span class="label"><div  class="fa fa-key"></div> KEY NAME</span>
     	      <span class="border"></span>
          </label>
       </section>
 
       <script>
         function myFunction() {
-          document.getElementById("cardname").value = document.getElementById("field1").value;
+          document.getElementById("cardname").value = document.getElementById("inputfelt").value;
           }
       </script>
 
 
 <!-- CONNECT KEY -->
     <p>TAP KEY TO CONNECT</p>
-    <button type="button" name="button" class="cancel-btn"><a href="connectkey.html">CONNECT KEY</a></button>
+    <button type="button" name="button" class="cancel-btn">
+      <div class="popup" onclick="popupConnect()">
+        CONNECT KEY
+      <span class="popuptext" id="popupKey"><img id="tapgif" src="billeder/giphy.gif">TAP KEY TO CONNECT</span>
+      </div>
+    </button>
 
+    <script>
+    function popupConnect() {
+      var popup = document.getElementById("popupKey");
+      popup.classList.toggle("show");
+    }
+    </script>
 
 
 <!-- FÅ KOORDINATER -->
@@ -73,30 +84,28 @@
           x.innerHTML = "Geolocation is not supported by this browser.";
         }
       }
-
       function showPosition(position) {
         x.innerHTML = "LATITUDE: " + position.coords.latitude +
         "<br>LONGITUDE: " + position.coords.longitude;
       }
     </script>
+
     <script>
-        // Function to change webpage background color
-        function myFunctionOne(color){
+        function changeColor(color){
             document.getElementById("cardholder").style.backgroundColor = color;
         }
-
     </script>
-    </head>
+
 <!-- ÆNDRE KORTFARVE -->
     <p>CARD APPEARANCE</p>
-    <button onclick="myFunctionOne('#fff')" class="color-btn first"></button>
-    <button onclick="myFunctionOne('#375868')" class="color-btn second"></button>
-    <button onclick="myFunctionOne('#54B9BD')" class="color-btn third"></button>
+    <button onclick="changeColor('#fff')" class="color-btn first"></button>
+    <button onclick="changeColor('#375868')" class="color-btn second"></button>
+    <button onclick="changeColor('#54B9BD')" class="color-btn third"></button>
     <button class="add-color-btn"><div class="fa fa-plus"></div></button>
     <button class="add-photo-btn"><div class="fa fa-camera"></div></button>
 
-    <script>
 
+    <script>
     //lav funktion der hedder skift farve, og så kalder den på hver knap med parameter
 
     // function myFunctionOne() {
@@ -122,10 +131,10 @@
 //      });
     </script>
 
+
 <!-- LISTER -->
     <p>LISTS</p>
     <ul>
-
     <label class="listbtnlabel">
       <input id="inputstar" class="listbtninp" type="checkbox" />
       <span id="star">BN</span>
