@@ -5,6 +5,8 @@ let one = document.getElementById("btnOne");
 let two = document.getElementById("btnTwo");
 let three = document.getElementById("btnThree");
 
+
+
 function leftSort() {
   function leftCheck() {
     document.getElementById("input1").checked = true;
@@ -93,16 +95,29 @@ left.addEventListener('click', leftSort);
 mid.addEventListener('click', midSort);
 right.addEventListener('click', rightSort);
 
-let dropdown = document.getElementById('nav-content1')
+// let dropdown = document.getElementById('dropdown')
+//
+// function showMenu(){
+//  dropdown.classList.toggle("invis")
+// }
+//
+// one.addEventListener('click', showMenu);
+// two.addEventListener('click', showMenu);
+// three.addEventListener('click', showMenu);
 
-function showMenu(){
- dropdown.classList.toggle("invis")
+
+
+
+
+// Man kan også lave transition på den her måde, men så går den ikke væk automatisk. Se focus:within.
+let dropExp = document.getElementById("dropdownExp");
+let expColor = document.getElementById("ddContent");
+
+function expand(){
+  dropExp.style.height = "400px";
+  dropExp.style.marginTop = "40%";
+  expColor.style.backgroundColor = "#000";
 }
-
-one.addEventListener('click', showMenu)
-two.addEventListener('click', showMenu)
-three.addEventListener('click', showMenu)
-
 
 
 // two.addEventListener('click', showMenu);
