@@ -23,7 +23,7 @@ p {
 /* --- Aside nav wrapper  --- */
 .asideWrapper {
 	height: 100%;
-	min-width: 310px;
+	min-width: 20%;
 	background-color: black;
 	opacity: 90%;
     position: fixed;
@@ -95,7 +95,7 @@ p {
 /* --- main wrapper  --- */
 .mainWrapper {
   position: relative;
-  left: 15%;
+  left: 20%;
   height: auto;
   max-width: 100%;
 }
@@ -110,7 +110,7 @@ p {
   align-items: left;
   background-color: #2b3e56;
   margin-bottom: 50px;
-  margin-left: 25px;
+  margin-left: 0px;
   overflow: hidden;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -306,7 +306,7 @@ p {
 .knapperSection .ptools h3 {
   color: #2b3e56;
   margin-left: 20%;
- 
+
 }
 
 .knapperSection .ptools hr {
@@ -449,7 +449,7 @@ p {
 }
 
 .tpg {
-	margin: 60px, 0; 
+	margin: 60px, 0;
 }
 
 .typoSection article {
@@ -603,9 +603,19 @@ p {
   background-color: #2b3e56;
   font-family: 'Josefin Sans', sans-serif;
 }
+
 .iconTable tr th {
   border: 1px solid white;
   padding: 1em;
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.fas {
+  font-size: 25px;
+}
+.far {
+  font-size: 25px;
 }
 
 /* ---  Navigation  --- */
