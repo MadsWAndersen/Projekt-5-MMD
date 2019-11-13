@@ -31,6 +31,7 @@
         <img src="HoC-logo.svg" alt="" id="logo" />
         <nav class="navWrapper">
           <ul>
+			<li><a href="#atomicSection">ATOMIC DESIGN</a></li>
             <li><a href="#farveSection">COLORS</a></li>
             <li><a href="#logoSection">LOGO</a></li>
             <li><a href="#knapperSection">BUTTONS</a></li>
@@ -53,6 +54,14 @@ that was created for NHS Group. <br>
 Here you can find everything you need concerning both design & code.
           </p>
         </section>
+
+		  <section class="atomicSection" id="atomicSection">
+		  <h1>ATOMIC DESIGN</h1>
+
+		  </section>
+
+
+
         <section class="farveSection" id="farveSection">
           <h1>COLORS</h1>
           <article class="color" style="background-color: #2B3E56;">
@@ -103,74 +112,69 @@ Here you can find everything you need concerning both design & code.
         </section>
         <section class="logoSection" id="logoSection">
           <h1>LOGO</h1>
-          <h3>Logo on a white background</h3>
-          <hr />
-          <img src="HoC-logo.svg" alt="" id="logo" />
           <h3>Logo on a blue background</h3>
           <hr />
           <div class="logoHvid">
-            <img src="HoC_logo_white.svg" alt="" id="logo" />
+            <img src="Billeder/LOGONAVN.png" alt="" id="logo"/>
           </div>
         </section>
+
+<!--BUTTONS-->
         <section class="knapperSection" id="knapperSection">
           <article>
             <h1>BUTTONS</h1>
             <h3>Standard button</h3>
             <hr />
             <p>Standard button used for most of the buttons</p>
-            <button type="button" class="standardBtn">Button</button>
+
+            <button type="button" class="standardBtn">BUTTON</button>
+
             <h3>Standard button on a blue background</h3>
             <hr />
-            <button type="button" class="standardBtn blue">Button</button>
+
+            <button type="button" class="standardBtn blue">BUTTON</button>
+
 
             <h3>NAV links which looks like buttons</h3>
             <hr />
             <li class="navList"><a href="#">Navigation</a></li>
           </article>
-          <article>
-            <h2>Production tools</h2>
+
+          <article class="ptools">
+            <h2>PRODUCTION TOOLS</h2>
             <h3>Standard button</h3>
             <hr />
             <div class="codeEmbed">
-              <code
-                >&lt;button type="button"
-                class="standardBtn">Button&lt;/button></code
-              >
+              <code>&lt;button type="button"
+                class="standardBtn">Button&lt;/button></code>
             </div>
             <h3>Standard button on a blue background</h3>
             <hr />
             <div class="codeEmbed">
-              <code
-                >&lt;button type="button" class="standardBtn
-                blue">Button&lt;/button></code
-              >
+              <code>&lt;button type="button" class="standardBtn
+                blue">Button&lt;/button></code>
             </div>
             <h3>NAV links which looks like buttons</h3>
             <hr />
             <div class="codeEmbed">
-              <code
-                >&lt;li class="navList">&lt;a
-                href="#">Navigation&lt;/a>&lt;/li></code
-              >
+              <code>&lt;li class="navList">&lt;a
+                href="#">Navigation&lt;/a>&lt;/li></code>
             </div>
           </article>
         </section>
         <section class="typoSection" id="typoSection">
-          <h1>TYPOGRAPHY</h1>
+          <h1 class="tpg">TYPOGRAPHY</h1>
           <article>
-            <h1 style="font-size: 30px;">_______ - Regular</h1>
-            <h1 style="font-size: 30px;">Is used on all headlines - Example:<br>
+            <h1 style="font-size: 40px;">'Josefin Sans', sans-serif - Regular</h1>
+			<p>'Josefin Sans', sans-serif is a google font and is used on all headlines as well as paragrah text.</p>
+            <h1 style="font-size: 25px;">Example of a headline (size 25px):<br><br>
 
-HEADLINE</h1>
-            <p>______ is a google font and is used on all headlines.</p>
-            <a href="https://fonts.google.com/specimen/Roboto" target="_blank">
-              <button class="standardBtn">Download _____ here</button></a
-            >
+
+THIS IS A HEADLINE</h1>
           </article>
           <article>
-            <h1 style="font-size: 30px;">______ - Regular</h1>
-            <h1 style="font-size: 30px;">
-              Is used on all paragraphs - Example:
+            <h1 style="font-size: 25px;">
+              Example of a paragraph (size 20px):
             </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -181,8 +185,8 @@ HEADLINE</h1>
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <a href="https://fonts.google.com/specimen/Abel" target="_blank">
-              <button class="standardBtn">Download ____ here</button></a
+            <a href="https://fonts.google.com/specimen/Josefin+Sans" target="_blank">
+              <button class="standardBtn">Download 'Josefin Sans', sans-serif here</button></a
             >
           </article>
         </section>
@@ -194,7 +198,7 @@ HEADLINE</h1>
             A lot of the inputs used in the product fit on one page but not the next. Therefore, we've added some diffent examples of the many different types of inputs we've used.
             <br /><br />
             Some have been made with a both a different background color as well as different overall colors, than others. They have also been listed as examples:
-			  
+
           <h3>Example of an input[type="text"]</h3>
           <hr />
           <input type="text" name="" placeholder="Input with text type" />
@@ -222,56 +226,117 @@ HEADLINE</h1>
             placeholder="Example of textarea with resize: vertical"
           ></textarea>
         </section>
+
         <section class="iconerSection" id="iconerSection">
+
           <h1>ICONS</h1>
           <h3>
             Icons need to be used the <i>right</i> way. The icons in this product have therefore been used because there is meaning behind them. They add to the overall style of the products and keep the pages from turning into nothing but boxes with text. Icons help make the pages more dynamic.
           </h3>
           <p>
             We have used:
-            <a href="https://fontawesome.com/icons?d=gallery">fontawesome</a>.
-            It's free and has a wide library of icons to choose from.
+            <a href="https://fontawesome.com/icons?d=gallery">FONTAWESOME</a>.
+            It's free and it has a wide library of icons to choose from.
           </p>
+
           <table class="iconTable">
             <tr>
-              <th style="font-weight: bold; font-size: 25px;">Class name:</th>
-              <th style="font-weight: bold; font-size: 25px;">Image</th>
+              <th style="font-size: 20px;">CLASS NAME:</th>
+              <th style="font-size: 20px;">IMAGE</th>
             </tr>
             <tr>
-              <th>fas fa-search</th>
-              <th><i class="fas fa-search"></i></th>
-            </tr>
-            <tr>
-              <th>fas fa-user-circle</th>
+              <th>FAS FA-USER-CIRCLE</th>
               <th><i class="fas fa-user-circle"></i></th>
             </tr>
             <tr>
-              <th>fab fa-linkedin</th>
-              <th><i class="fab fa-linkedin"></i></th>
+              <th>FAS FA-USER</th>
+              <th><i class="fas fa-user"></i></th>
             </tr>
             <tr>
-              <th>fas fa-phone</th>
-              <th><i class="fas fa-phone"></i></th>
+              <th>FAS FA-KEY</th>
+              <th><i class="fas fa-key"></i></th>
             </tr>
             <tr>
-              <th>fas fa-envelope</th>
+              <th>FAS FA-QUESTION-CIRCLE</th>
+              <th><i class="fas fa-question-circle"></i></th>
+            </tr>
+            <tr>
+              <th>FAS FA-POWER-OFF</th>
+              <th><i class="fas fa-power-off"></i></th>
+            </tr>
+            <tr>
+              <th>FAS FA-ENVELOPE</th>
               <th><i class="fas fa-envelope"></i></th>
             </tr>
             <tr>
-              <th>fas fa-check-square</th>
-              <th><i class="fas fa-check-square"></i></th>
+              <th>FAS FA-PLUS</th>
+              <th><i class="fas fa-plus"></i></th>
             </tr>
             <tr>
-              <th>far fa-check-circle</th>
-              <th><i class="far fa-check-circle"></i></th>
+              <th>FAS FA-PLUS-CIRCLE</th>
+              <th><i class="fas fa-plus-circle"></i></th>
             </tr>
             <tr>
-              <th>fas fa-angle-right</th>
-              <th><i class="fas fa-angle-right"></i></th>
+              <th>FAS FA-LOCK</th>
+              <th><i class="fas fa-lock"></i></th>
+            </tr>
+            <tr>
+              <th>FAS FA-CHEVRON-LEFT</th>
+              <th><i class="fas fa-chevron-left"></i></th>
+            </tr>
+            <tr>
+              <th>FAS FA-CAMERA</th>
+              <th><i class="fas fa-camera"></i></th>
+            </tr>
+            <tr>
+              <th>FAS FA-MOBILE-ALT</th>
+              <th><i class="fas fa-mobile-alt"></i></th>
+            </tr>
+            <tr>
+              <th>FAS FA-STAR</th>
+              <th><i class="fas fa-star"></i></th>
+            </tr>
+            <tr>
+              <th>FAR FA-STAR</th>
+              <th><i class="far fa-star"></i></th>
+            </tr>
+            <tr>
+              <th>FAS FA-BUILDING</th>
+              <th><i class="fas fa-building"></i></th>
+            </tr>
+            <tr>
+              <th>FAR FA-BUILDING</th>
+              <th><i class="far fa-building"></i></th>
+            </tr>
+            <tr>
+              <th>FAS FA-FILE-ALT</th>
+              <th><i class="fas fa-file-alt"></i></th>
+            </tr>
+            <tr>
+              <th>FAR FA-FILE-ALT</th>
+              <th><i class="far fa-file-alt"></i></th>
+            </tr>
+            <tr>
+              <th>FAS FA-ID-CARD</th>
+              <th><i class="fas fa-id-card"></i></th>
+            </tr>
+            <tr>
+              <th>FAR FA-ID-CARD</th>
+              <th><i class="far fa-id-card"></i></th>
+            </tr>
+            <tr>
+              <th>FAS FA-PAPER-PLANE</th>
+              <th><i class="fas fa-paper-plane"></i></th>
+            </tr>
+            <tr>
+              <th>FAR FA-PAPER-PLANE</th>
+              <th><i class="far fa-paper-plane"></i></th>
             </tr>
           </table>
         </section>
+
         <section class="navigationSection" id="navigationSection">
+
           <h1>NAVIGATION</h1>
           <h4>
             The navigation is the same on all pages.
@@ -319,7 +384,9 @@ HEADLINE</h1>
             </nav>
           </article>
         </section>
+
         <section class="sprogSection" id="sprogSection">
+
           <h1>LANGUAGE/TONE OF VOICE</h1>
           <article>
             <div class="sprog">
@@ -336,5 +403,6 @@ HEADLINE</h1>
         </section>
       </main>
     </div>
+
   </body>
 </html>
