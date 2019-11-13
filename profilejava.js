@@ -1,10 +1,10 @@
 
-var hejsa = document.getElementById("inp1");
-var hejsa2 = document.getElementById("inp2");
-var hejsa3 = document.getElementById("inp3");
-var editBtn = document.getElementById("edit-btn");
+let hejsa = document.getElementById("inp1");
+let hejsa2 = document.getElementById("inp2");
+let hejsa3 = document.getElementById("inp3");
+let editBtn = document.getElementById("edit-btn");
 
-var bob = [hejsa, hejsa2, hejsa3];
+let bob = [hejsa, hejsa2, hejsa3];
 console.log(bob[2]);
 
 document.getElementById("inp1").readOnly=true;
