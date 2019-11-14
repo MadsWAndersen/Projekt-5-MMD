@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+
 }
 
 h1, a, h2, h3, h4{
@@ -198,7 +199,7 @@ p {
 
 .farveSection .color {
   margin: 14px 0px;
-  width: 80%;
+  width: 70%;
   height: 120px;
   display: flex;
   flex-direction: row;
@@ -688,6 +689,14 @@ p {
 }
 
 /* ---  Navigation  --- */
+
+.navigationSection {
+  height: 650px;
+}
+
+.navigationSection h1 {
+  margin-top: 60px;
+}
 .topsection {
   display: grid;
   grid-column: 1/-1;
@@ -698,11 +707,11 @@ p {
 }
 
 #nav-container {
-  margin-top: -50px;
-  margin-bottom: 50px;
-  width: 100%;
+  margin-top: 20px;
+  width: 85%;
   pointer-events: none;
   display: grid;
+  position: relative;
 }
 
 #nav-container .bg {
@@ -728,6 +737,7 @@ p {
 
 .navbutton {
   grid-column: 1;
+  position: absolute;
   display: inline-block;
   -webkit-appearance: none;
   border: 0;
@@ -779,6 +789,7 @@ p {
   grid-template-rows: auto;
   padding: 20px;
   padding-bottom: 30px;
+  padding-top: 30px;
   width: 90%;
   max-width: 50%;
   top: 0;
