@@ -5,9 +5,6 @@ let hejsa3 = document.getElementById("inp3");
 
 let editBtn = document.getElementById("edit-btn");
 
-let bob = [hejsa, hejsa2, hejsa3, editBtn];
-console.log(bob[2]);
-
 document.getElementById("inp1").readOnly=true;
 document.getElementById("inp2").readOnly=true;
 document.getElementById("inp3").readOnly=true;
