@@ -1,17 +1,21 @@
 let left = document.getElementById("leftcard");
 let mid = document.getElementById("midcard");
 let right = document.getElementById("rightcard");
+let one = document.getElementById("btnOne");
+let two = document.getElementById("btnTwo");
+let three = document.getElementById("btnThree");
 
-// var editBtn = document.getElementById("edit-btn");
 
 
 function leftSort() {
   function leftCheck() {
     document.getElementById("input1").checked = true;
+    one.classList.remove("invis");
+    two.classList.add("invis");
+    three.classList.add("invis");
   }
-leftCheck();
 
-
+  leftCheck();
   right.classList.add("kort1");
   if (right.classList.contains("kort1")) {
     right.classList.remove("kort2", "kort3");
@@ -26,14 +30,19 @@ leftCheck();
   if (mid.classList.contains("kort3")) {
     mid.classList.remove("kort1", "kort2");
   }
-style.cssText ="-webkit-transition: all 0.5s ease-in-out;";
+  // left.cssText = "-webkit-transition: all 0.8s ease-in-out;";
 }
+
+
 
 function midSort() {
   function midCheck() {
     document.getElementById("input2").checked = true;
+    one.classList.add("invis");
+    two.classList.remove("invis");
+    three.classList.add("invis");
   }
-midCheck();
+  midCheck();
   left.classList.add("kort1");
   if (left.classList.contains("kort1")) {
     left.classList.remove("kort2", "kort3");
@@ -49,18 +58,19 @@ midCheck();
     right.classList.remove("kort1", "kort2");
   }
 
-style.cssText ="-webkit-transition: all 0.5s ease-in-out;";
-
-
+  // mid.cssText = "-webkit-transition: all 0.8s ease-in-out;";
 }
 
 
 function rightSort() {
   function rightCheck() {
     document.getElementById("input3").checked = true;
+    one.classList.add("invis");
+    two.classList.add("invis");
+    three.classList.remove("invis");
   }
-rightCheck();
 
+  rightCheck();
   mid.classList.add("kort1");
   if (mid.classList.contains("kort1")) {
     mid.classList.remove("kort2", "kort3");
@@ -74,55 +84,78 @@ rightCheck();
   left.classList.add("kort3");
   if (left.classList.contains("kort3")) {
     left.classList.remove("kort1", "kort2");
-
   }
 
-
-style.cssText ="-webkit-transition: all 0.5s ease-in-out;";
-
-
+  // right.cssText = "transition: all 1.8s ease-in-out;";
 }
+
+
+
 left.addEventListener('click', leftSort);
 mid.addEventListener('click', midSort);
 right.addEventListener('click', rightSort);
-// function midSort() {
+
+// let dropdown = document.getElementById('dropdown')
 //
-//     mid.classList.add("kort2");
-//   if(mid.classList.contains("kort2")){
-//     mid.classList.remove("kort3");
-//
-//   }
-//   left.classList.add("kort2");
-//   if (left.classList.contains("kort2")) {
-//     left.classList.remove("kort1");
-//
-//
-//
-// }
-// right.classList.add("kort1");
-// if (right.classList.contains("kort1")) {
-// right.classList.remove("kort3");
-// }
+// function showMenu(){
+//  dropdown.classList.toggle("invis")
 // }
 //
-// window.alert();
+// one.addEventListener('click', showMenu);
+// two.addEventListener('click', showMenu);
+// three.addEventListener('click', showMenu);
 
 
-// let leftCard
+
+
+
+// Man kan også lave transition på den her måde, men så går den ikke væk automatisk. Se focus:within.
+let dropExp = document.getElementById("dropdownExp");
+let expColor = document.getElementById("ddContent");
+
+function expand() {
+  dropExp.style.height = "400px";
+  dropExp.style.marginTop = "40%";
+  expColor.style.backgroundColor = "#000";
+}
+
+
+// two.addEventListener('click', showMenu);
+// three.addEventListener('click', showMenu);
+
 //
-// function cardSort() {
-// kort1.classList.add("active");
-// 		if (hejsa.classList.contains("active")) {
-// 		hejsa.readOnly=false;
+//   function editTwo() {
 //
-// hejsa2.classList.add("active");
-// 		if (hejsa2.classList.contains("active")) {
-// 		hejsa2.readOnly=false;
+//     if (radioTwo.checked == true) {
+//       one.classList.add("invis");
+//       two.classList.remove("invis");
+//       three.classList.add("invis");
+//     }
 //
-// hejsa3.classList.add("active");
-// 		if (hejsa3.classList.contains("active")) {
-// 		hejsa3.readOnly=false;
-// 	}
-// 	}
-// 	}
+//     function editThree() {
+//
+//       if (radioThree.checked == true) {
+//         one.classList.add("invis");
+//         two.classList.add("invis");
+//         three.classList.remove("invis");
+//       }
 // }
+
+
+
+
+//
+// let arrayEksempel = ["en", "to", "tre", "fire"];
+//
+// for(let i = 0; i < arrayEksempel.length; i++){
+//
+//    console.log(arrayEksempel[i]);
+//
+// }
+
+/* Outputs:
+one
+two
+three
+four
+*/

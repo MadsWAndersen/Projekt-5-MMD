@@ -177,20 +177,6 @@ a {
 
 /*BUTTON*/
 
-.edit-btn {
-	grid-column: 2;
-	grid-row: 4;
-	display: block;
-	height: 50px;
-  width: 100%;
-	color: white;
-  margin-top: -10px;
-	background-image: linear-gradient(to bottom, #75DBCD 0%, #2588A7 100%);
-	border: none;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 100%;
-}
-
 .save-btn {
 	grid-column: 2;
 	grid-row: 5;
@@ -358,4 +344,58 @@ ul {
     background-size: 40px;
     background-position: center;
     color: transparent;
+    }
+
+
+/*POP UP*/
+/* Popup container*/
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 12px 0px;
+    position: absolute;
+    z-index: 1;
+    bottom: -50px;
+    margin-left: -150px;
+    align-content: center;
+    opacity: 90%;
+    }
+
+#tapgif {
+  width: 280px;
+  margin: 15px;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 0,9;}
+    }
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 0,9;}
     }

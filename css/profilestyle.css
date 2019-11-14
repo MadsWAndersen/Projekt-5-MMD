@@ -267,7 +267,7 @@ body {
 }
 
 .editable {
-  background-image: linear-gradient(to bottom, #75DBCD 100%, #2588A7 0%);
+  background-color: #2588A7;
   font-weight: bold;
   grid-column: 2;
   grid-row: 4;
