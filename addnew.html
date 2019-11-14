@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>add new key</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="css/addnew.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/758f05fc43.js" crossorigin="anonymous" defer></script>
+</head>
+
+
+
+<body>
+  <div class="header">
+
+<section class="backbtn">
+	 	<a href="main1.html" target="_blank">
+		 	<i class="fas fa-chevron-left"></i>
+		</a>
+</section>
+
+		<section class="pagetitle">
+			<h1>ADD KEY</h1>
+	  </section>
+	</div>
+
+
+  <main>
+
+    <div id="cardholder" class="cardholder">
+      <textarea readonly id="cardname"></textarea>
+    </div>
+
+<!-- ÆNDRE NAVN -->
+    <section class="forms">
+
+      <section class="nameinp">
+        <label for="inp" class="inp">
+    	     <input id="inp" type="text" placeholder="&nbsp;" onkeyup="inputText()">
+    	      <span class="label"><i class="fa fa-key"></i> KEY NAME</span>
+    	      <span class="border"></span>
+         </label>
+      </section>
+
+      <script>
+        function inputText() {
+          document.getElementById("cardname").value = document.getElementById("inp").value;
+          }
+      </script>
+
+
+<!-- CONNECT KEY -->
+    <p>TAP KEY TO CONNECT</p>
+    <button type="button" name="button" class="cancel-btn">
+      <div class="popup" onclick="popupConnect()">
+        CONNECT KEY
+      <span class="popuptext" id="popupKey"><img id="tapgif" src="billeder/giphy.gif" alt="tap key to phone">TAP KEY TO CONNECT</span>
+      </div>
+    </button>
+
+    <script>
+    function popupConnect() {
+      var popup = document.getElementById("popupKey");
+      popup.classList.toggle("show");
+    }
+    </script>
+
+
+<!-- FÅ KOORDINATER -->
+    <p>GET COORDINATES FOR KEY</p>
+    <button class="cancel-btn" onclick="getLocation()">GET LOCATION</button>
+    <p id="location"></p>
+    <script>
+      var x = document.getElementById("location");
+
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+      function showPosition(position) {
+        x.innerHTML = "LATITUDE: " + position.coords.latitude +
+        "<br>LONGITUDE: " + position.coords.longitude;
+      }
+    </script>
+
+    <script>
+        function changeColor(color){
+            document.getElementById("cardholder").style.backgroundColor = color;
+        }
+    </script>
+
+<!-- ÆNDRE KORTFARVE -->
+    <p>CARD APPEARANCE</p>
+    <button onclick="changeColor('#fff')" class="color-btn first"></button>
+    <button onclick="changeColor('#375868')" class="color-btn second"></button>
+    <button onclick="changeColor('#54B9BD')" class="color-btn third"></button>
+    <button class="add-color-btn"><i class="fa fa-plus"></i></button>
+    <button class="add-photo-btn"><i class="fa fa-camera"></i></button>
+
+
+    <script>
+    //lav funktion der hedder skift farve, og så kalder den på hver knap med parameter
+
+    // function myFunctionOne() {
+    //   document.getElementById("cardholder").style.backgroundColor = "white";
+    // }
+    // function myFunctionTwo() {
+    //   document.getElementById("cardholder").style.backgroundColor = "#375868";
+    //   }
+    // function myFunctionThree() {
+    //   document.getElementById("cardholder").style.backgroundColor = "#54B9BD";
+    //   }
+
+//      var button = document.querySelector("button");
+
+//      button.addEventListener("click", function() {
+//      const curColour = document.cardholder.style.backgroundColor;
+
+//      if (curColour === 'red') {
+//        document.cardholder.style.backgroundColor = "blue";
+//      }
+//      else {
+//        document.cardholder.style.backgroundColor = "red";
+//      });
+    </script>
+
+
+<!-- LISTER -->
+    <p>LISTS</p>
+    <ul>
+    <label class="listbtnlabel">
+      <input id="inputstar" class="listbtninp" type="checkbox" />
+      <span id="star">BN</span>
+    </label>
+
+    <label class="listbtnlabel">
+      <input id="inputwork" class="listbtninp" type="checkbox" />
+      <span id="work">BN</span>
+    </label>
+
+    <label class="listbtnlabel">
+      <input id="inputhome" class="listbtninp" type="checkbox" />
+      <span id="home">BN</span>
+    </label>
+
+    <label class="listbtnlabel">
+      <input id="inputcard" class="listbtninp" type="checkbox" />
+      <span id="card">BN</span>
+    </label>
+
+    <label class="listbtnlabel">
+      <input id="inputplane" class="listbtninp" type="checkbox" />
+      <span id="plane">BN</span>
+    </label>
+
+  </ul>
+
+  <button type="button" name="button" class="save-btn">SAVE CHANGES</button>
+  <a href="main1.html" class="cancel-btn" id="cancel-btn">CANCEL</a>
+
+    </section>
+  </main>
+</body>
+</html>

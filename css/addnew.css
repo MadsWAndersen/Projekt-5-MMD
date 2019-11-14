@@ -1,0 +1,406 @@
+@charset "utf-8";
+/* CSS Document */
+
+ * {
+box-sizing: border-box;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr ;
+  grid-template-rows: 1fr;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #2b3e56;
+  opacity: 95%;
+  top: 0;
+  z-index: 1;
+}
+
+body {
+	background-color: #2b3e56;
+	font-family: 'Josefin Sans', sans-serif;
+	height: 100%;
+	display: grid;
+	webkit-text-size-adjust: 100%;
+	webkit-font-smoothing: antialiased;
+}
+
+.backbtn {
+	color: white;
+	grid-column-end: 2;
+	grid-row: 1;
+	font-size: 100%;
+	padding-top: 33px;
+	margin-left: 30px;
+}
+
+a {
+	color: white;
+}
+
+.pagetitle{
+	color: white;
+	grid-row: 1;
+	font-size: 12px;
+	text-align: center;
+  padding-top: 20px;
+  font-family: 'Josefin Sans';
+}
+
+h1{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: lighter;
+}
+
+main {
+  margin-top: 70px;
+  align-content: center;
+  display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: 1fr 5fr;
+	grid-gap: 5px;
+}
+
+.cardholder {
+  background-color: lightgreen;
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  grid-column: 2;
+}
+
+#cardname {
+  font-size: 25px;
+  color: #ffffff;
+  background-color: transparent;
+  border-width: 0;
+  margin: 20px;
+  width: 85%;
+  text-shadow: 2px 0px 5px black;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/*FORMS*/
+
+#field1 {
+  text-transform: uppercase;
+}
+
+.forms{
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.nameinp {
+  grid-row: 1;
+}
+
+.inp {
+	position: relative;
+	margin: auto;
+	width: 100%;
+	max-width: 280px;
+}
+
+.inp .label {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	font-size: 100%;
+	color: white;
+	font-weight: 500;
+	transform-origin: 0 0;
+	transition: all 0.2s ease;
+	text-indent: 0px;
+}
+
+.inp .border {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background: none;
+	transform: scaleX(0);
+	transition: all 0.15s ease;
+}
+
+.inp input {
+	-webkit-appearance: none;
+	width: 100%;
+	border: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 12px 0 0px;
+	height: 60px;
+	font-size: 16px;
+	border-bottom: 1px solid white;
+	background: none;
+	border-radius: 0;
+	color: white;
+	transition: all 0.15s ease;
+}
+
+.inp input:hover {
+	background: rgba(34,50,84,0.03);
+}
+
+.inp input:not(:placeholder-shown) + span {
+	color: #c8ccd4;
+	transform: translateY(-26px) scale(0.75);
+}
+
+.inp input:focus {
+	background: none;
+	outline: none;
+}
+
+.inp input:focus + span {
+	color: #c8ccd4;
+	transform: translateY(-26px) scale(0.75);
+}
+
+
+/*BUTTON*/
+
+.save-btn {
+	grid-column: 2;
+	grid-row: 5;
+	display: block;
+	height: 50px;
+  width: 100%;
+	color: white;
+  margin-top: 100px;
+  margin-bottom: 20px;
+	background-image: linear-gradient(to bottom, #75DBCD 0%, #2588A7 100%);
+	border: none;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 100%;
+}
+.cancel-btn {
+	grid-column: 2;
+	grid-row: 4;
+	display: block;
+	height: 50px;
+  width: 100%;
+	color: white;
+  margin-top: 0px;
+	background-color: #3E6D7C;
+	border: none;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 100%;
+  text-align: center;
+}
+
+#cancel-btn {
+  padding-top: 18px;
+}
+
+
+/*COLOR BUTTONS*/
+
+.color-btn {
+  width: 45px;
+  height: 45px;
+  margin-left: 1px;
+}
+.first {
+  background-color: #ffffff;
+}
+.second {
+  background-color: #375868;
+}
+.third {
+  background-color: #54B9BD;
+}
+
+.add-color-btn {
+  position: absolute;
+  margin-left: 5px;
+  width: 45px;
+  height: 45px;
+  background-color: #2b3e56;
+  border-color: #979FAA;
+  border-width: thin;
+  color: white;
+}
+.add-photo-btn {
+  float: right;
+  width: 45px;
+  height: 45px;
+  background-color: #2b3e56;
+  border-color: white;
+  border-width: thin;
+  color: white;
+}
+
+ul {
+  margin-left: -45px;
+  margin-top: -10px;
+}
+
+/*LIST BUTTONS*/
+
+.list-btn {
+  color: white;
+  font-size: 35px;
+  position: relative;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.listbtnlabel {
+  float:left;
+  margin-right: -10px;
+}
+.listbtninp {
+  display: none;
+  }
+
+/*STJERNE*/
+#star {
+  width: 50px;
+  font-size: 40px;
+  background: url(../billeder/star-regular.svg) no-repeat;
+  background-size: 40px;
+  background-position: center;
+  color: transparent;
+  }
+.listbtninp:checked + #star {
+  background: url(../billeder/star-solid.svg) no-repeat;
+  background-size: 40px;
+  background-position: center;
+  color: transparent;
+  }
+
+/*WORK*/
+#work {
+    width: 50px;
+    font-size: 40px;
+    background: url(../billeder/file-alt-regular.svg) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    color: transparent;
+    }
+  #inputwork:checked + #work {
+    background: url(../billeder/file-alt-solid.svg) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    color: transparent;
+    }
+
+/*HOME*/
+#home {
+    width: 50px;
+    font-size: 40px;
+    background: url(../billeder/building-regular.svg) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    color: transparent;
+    }
+#inputhome:checked + #home {
+    background: url(../billeder/building-solid.svg) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    color: transparent;
+    }
+
+/*CARD*/
+#card {
+    width: 50px;
+    font-size: 40px;
+    background: url(../billeder/id-card-regular.svg) no-repeat;
+    background-size: 40px;
+    background-position: center;
+    color: transparent;
+    }
+#inputcard:checked + #card {
+    background: url(../billeder/id-card-solid.svg) no-repeat;
+    background-size: 40px;
+    background-position: center;
+    color: transparent;
+    }
+
+/*PLANE*/
+#plane {
+    width: 50px;
+    font-size: 40px;
+    background: url(../billeder/paper-plane-regular.svg) no-repeat;
+    background-size: 40px;
+    background-position: center;
+    color: transparent;
+    }
+#inputplane:checked + #plane {
+    background: url(../billeder/paper-plane-solid.svg) no-repeat;
+    background-size: 40px;
+    background-position: center;
+    color: transparent;
+    }
+
+
+/*POP UP*/
+/* Popup container*/
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 12px 0px;
+    position: absolute;
+    z-index: 1;
+    bottom: -50px;
+    margin-left: -150px;
+    align-content: center;
+    opacity: 90%;
+    }
+
+#tapgif {
+  width: 280px;
+  margin: 15px;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 0,9;}
+    }
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 0,9;}
+    }
