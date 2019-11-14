@@ -189,8 +189,6 @@ body {
 }
 
 
-
-
 /*MOBILE ICON*/
 
 .iconinp {
@@ -199,14 +197,11 @@ body {
 	font-size: 80%;
 }
 
-
 .iconinp .fa-mobile-alt {
 	position: absolute;
 	top: 0px;
 	left: -13px;
 }
-
-
 
 
 /*PASSWORD ICON*/

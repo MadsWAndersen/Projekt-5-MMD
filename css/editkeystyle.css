@@ -177,20 +177,6 @@ a {
 
 /*BUTTON*/
 
-.edit-btn {
-	grid-column: 2;
-	grid-row: 4;
-	display: block;
-	height: 50px;
-  width: 100%;
-	color: white;
-  margin-top: -10px;
-	background-image: linear-gradient(to bottom, #75DBCD 0%, #2588A7 100%);
-	border: none;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 100%;
-}
-
 .save-btn {
 	grid-column: 2;
 	grid-row: 5;
