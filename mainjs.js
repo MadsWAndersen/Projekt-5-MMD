@@ -113,7 +113,7 @@ right.addEventListener('click', rightSort);
 let dropExp = document.getElementById("dropdownExp");
 let expColor = document.getElementById("ddContent");
 
-function expand() {
+function expand(){
   dropExp.style.height = "400px";
   dropExp.style.marginTop = "40%";
   expColor.style.backgroundColor = "#000";
