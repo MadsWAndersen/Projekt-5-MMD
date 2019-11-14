@@ -28,9 +28,9 @@
         <div id="nav-content" tabindex="0">
           <ul class="menuitems fa-ul">
             <li><i class="fas fa-user-circle"></i></li>
-            <li><a href="#0"><span class="fa-li"><i class="fas fa-user"></i></span>PROFILE</a></li>
-            <li><a href="#0"><span class="fa-li"><i class="fas fa-key"></i></span>YOUR KEYS</a></li>
-            <li><a href="#0"><span class="fa-li"><i class="fas fa-question-circle"></i></span>HELP</a></li>
+            <li><a href="profile.html"><span class="fa-li"><i class="fas fa-user"></i></span>PROFILE</a></li>
+            <li><a href="yourkeys.html"><span class="fa-li"><i class="fas fa-key"></i></span>YOUR KEYS</a></li>
+            <li><a href="help.html"><span class="fa-li"><i class="fas fa-question-circle"></i></span>HELP</a></li>
           </ul>
           <ul class="logout fa-ul">
             <li><a href="#0"><span class="fa-li"><i class="fas fa-power-off"></i></span>LOG OUT</a></li>
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="plusicon">
-        <i class="fas fa-plus"></i>
+        <a href="profile.html"><i class="fas fa-plus"></i></a>
       </div>
 
     </section>
@@ -46,18 +46,17 @@
 
 
     <section class="carousel">
-      <button type="button" onclick="leftSort()" class="kort1 onecolor lol" id="leftcard">1
+      <button type="button" onclick="leftSort()" class="kort1 onecolor lol" id="leftcard">
       </button>
-      <button type="button" onclick="midSort()" class="kort2 twocolor" id="midcard">2
+      <button type="button" onclick="midSort()" class="kort2 twocolor" id="midcard">
       </button>
-      <button type="button" onclick="rightSort()" class="kort3 threecolor" id="rightcard">3
+      <button type="button" onclick="rightSort()" class="kort3 threecolor" id="rightcard">
       </button>
-      <div class="editBtn invis" id="btnOne">One
+      <div class="editBtn invis" id="btnOne">
       </div>
-      <div class="editBtn" id="btnTwo">Two
+      <div class="editBtn" id="btnTwo">
       </div>
       <div class="editBtn invis" id="btnThree">
-        Three
       </div>
     </section>
 
@@ -71,13 +70,13 @@
 
       <div id="ddContent" tabindex="0">
         <div class="editKnap">
-        <p class="ddtext">EDIT</p>
+          <p class="ddtext">EDIT</p>
         </div>
         <div class="shareKnap">
-        <p class="ddtext">SHARE</p>
+          <p class="ddtext">SHARE</p>
         </div>
         <div class="deleteKnap">
-        <p class="ddtext">DELETE</p>
+          <p class="ddtext">DELETE</p>
         </div>
       </div>
     </div>
@@ -113,23 +112,36 @@
 
 
 
-      <div class="list home">
+      <div>
+        <!-- Trigger/Open The Modal -->
+        <button class="list home" id="homeBtn">
+          <i class="fas fa-home"></i>
+          <p class="txtlist">HOME</p>
+        </button>
 
-            <!-- <button class="homeKnap1">
-            <p class="homeText">LEJLIGHED</p>
-          </button>
-            <div class="homeKnap2">
-            <p class="homeText">KÆLDER</p>
-            </div> -->
+        <!-- The Modal -->
+        <div id="homeModal" class="modal">
 
-        <i class="fas fa-home"></i>
-        <p class="txtlist">HOME</p>
+          <!-- Modal content -->
+          <div class="home-box">
+            <span class="homeClose">&times;</span>
+            <div class="home-content">
+              <!-- <p>Some text in the Modal..</p> -->
+              <div class="homeKnap1">
+                <p class="homeText">LEJLIGHED</p>
+              </div>
+              <div class="homeKnap2">
+                <p class="homeText">KÆLDER</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
 
 
 
-              <!-- SCHOOL
+      <!-- SCHOOL
               SCHOOL
               SCHOOL
               SCHOOL
@@ -138,33 +150,37 @@
 
 
 
-      <div class="list school">
+              <div>
+                <!-- Trigger/Open The Modal -->
+                <button class="list school" id="schoolBtn">
+                  <i class="fas fa-graduation-cap"></i>
+                  <p class="txtlist">SCHOOL</p>
+                </button>
 
-                      <!-- <div class="schoolKnap1 schoolKnap">
-                      <p class="schoolText">INDGANG A</p>
+                <!-- The Modal -->
+                <div id="schoolModal" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="school-box">
+                    <span class="schoolClose">&times;</span>
+                    <div class="school-content">
+                      <!-- <p>Some text in the Modal..</p> -->
+                      <div class="schoolKnap1">
+                        <p class="homeText">EKSEMPEL 1</p>
                       </div>
-
-                      <div class="schoolKnap2 schoolKnap">
-                      <p class="schoolText">INDGANG B</p>
+                      <div class="schoolKnap2">
+                        <p class="homeText">EKSEMPEL 2</p>
                       </div>
-
-                      <div class="schoolKnap3 schoolKnap">
-                      <p class="schoolText">STUDIO</p>
-                      </div>
-
-                      <div class="schoolKnap4 schoolKnap">
-                      <p class="schoolText">MEDIA LABS</p>
-                      </div> -->
-
-        <i class="fas fa-graduation-cap"></i>
-        <p class="txtlist">SCHOOL</p>
-      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
 
 
 
-<!-- WORK
+      <!-- WORK
 WORK
 WORK
 WORK
@@ -181,34 +197,89 @@ WORK
 WORK -->
 
 
+<div>
+
+  <button class="list work" id="workBtn">
+    <i class="fas fa-briefcase"></i>
+    <p class="txtlist">WORK</p>
+  </button>
 
 
-      <div class="list work">
-            <!-- <div class="workKnap1 workKnap">
-            <p class="workText">KONTOR</p>
-            </div>
+  <div id="workModal" class="modal">
 
-            <div class="workKnap2 workKnap">
-            <p class="workText">HOVEDINDGANG</p>
-            </div>
 
-            <div class="workKnap3 workKnap">
-            <p class="workText">DEPOT</p>
-            </div> -->
+    <div class="work-box">
+      <span class="workClose">&times;</span>
+      <div class="work-content">
 
-        <i class="fas fa-briefcase"></i>
-        <p class="txtlist">WORK</p>
+        <div class="workKnap1">
+          <p class="homeText">EKSEMPEL321 1</p>
+        </div>
+        <div class="workKnap2">
+          <p class="homeText">EKSEMPEL 2</p>
+        </div>
       </div>
+    </div>
+  </div>
+</div>
 
 
 
 
 
-      <div class="addnew">
-        <i class="fas fa-plus-circle"></i>
-        <p class="txtlist">ADD NEW LIST</p>
+
+
+
+
+
+
+
+
+
+
+<!-- LIST LIST LIST
+LIST LIST LIST
+LIST LIST LIST
+LIST LIST LIST
+LIST LIST LISTLIST LIST LIST
+LIST LIST LIST
+LIST LIST LIST
+LIST LIST LIST
+LIST LIST LIST
+LIST LIST LISTLIST LIST LIST
+LIST LIST LIST
+LIST LIST LIST
+LIST LIST LISTLIST LIST LIST -->
+
+
+
+
+
+<div>
+
+  <button class="addlist addnew" id="addBtn">
+    <i class="fas fa-plus-circle"></i>
+    <p class="txtlist">ADD NEW LIST</p>
+  </button>
+
+
+  <div id="addModal" class="modal">
+
+
+    <div class="add-box">
+      <span class="addClose">&times;</span>
+      <div class="add-content">
+
+        <div class="addKnap1">
+          <p class="homeText">EKSEMPEL321 1</p>
+        </div>
+        <div class="addKnap2">
+          <p class="homeText">EKSEMPEL 2</p>
+        </div>
       </div>
-
+    </div>
+  </div>
+</div>
     </section>
 
 

@@ -105,19 +105,176 @@ right.addEventListener('click', rightSort);
 // two.addEventListener('click', showMenu);
 // three.addEventListener('click', showMenu);
 
-
-
-
-
 // Man kan også lave transition på den her måde, men så går den ikke væk automatisk. Se focus:within.
-let dropExp = document.getElementById("dropdownExp");
-let expColor = document.getElementById("ddContent");
+// let dropExp = document.getElementById("dropdownExp");
+// let expColor = document.getElementById("ddContent");
+//
+// function expand(){
+//   dropExp.style.height = "400px";
+//   dropExp.style.marginTop = "40%";
+//   expColor.style.backgroundColor = "#000";
+// }
 
-function expand(){
-  dropExp.style.height = "400px";
-  dropExp.style.marginTop = "40%";
-  expColor.style.backgroundColor = "#000";
-}
+
+// Get the modal
+var homeModal = document.getElementById("homeModal");
+
+// Get the button that opens the modal
+var homeBtn = document.getElementById("homeBtn");
+
+// Get the <span> element that closes the modal
+var homeClose = document.getElementsByClassName("homeClose")[0];
+
+// When the user clicks on the button, open the modal
+homeBtn.onclick = function() {
+  homeModal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+homeClose.onclick = function() {
+  homeModal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.addEventListener("click", function(event) {
+  if (event.target == homeModal) {
+    homeModal.style.display = "none";
+  }
+});
+
+
+// SCHOOL
+// SCHOOL
+// SCHOOL
+// SCHOOL
+// SCHOOL
+// SCHOOL
+// SCHOOL
+// SCHOOLSCHOOL
+// SCHOOL
+// SCHOOL
+
+// Get the modal
+var schoolModal = document.getElementById("schoolModal");
+
+// Get the button that opens the modal
+var schoolBtn = document.getElementById("schoolBtn");
+
+// Get the <span> element that closes the modal
+var schoolClose = document.getElementsByClassName("schoolClose")[0];
+
+// When the user clicks on the button, open the modal
+schoolBtn.onclick = function() {
+  schoolModal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+schoolClose.onclick = function() {
+  schoolModal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.addEventListener("click", function(event) {
+  if (event.target == schoolModal) {
+    schoolModal.style.display = "none";
+
+  }
+});
+
+
+
+// WORK
+// WORK
+// WORK
+// WORK
+// WORK
+// WORK
+// WORK
+// WORK
+// WORKWORK
+// WORK
+// WORK
+// WORK
+// WORK
+// WORK
+
+var workModal = document.getElementById("workModal");
+var workBtn = document.getElementById("workBtn");
+var workClose = document.getElementsByClassName("workClose")[0];
+
+workBtn.onclick = function() {
+  workModal.style.display = "block";
+};
+
+workClose.onclick = function() {
+  workModal.style.display = "none";
+};
+
+window.addEventListener("click", function(event) {
+  if (event.target == workModal) {
+    workModal.style.display = "none";
+  }
+});
+
+
+
+
+
+
+// ADDNEW
+// ADDNEW
+// ADDNEW
+// ADDNEW
+// ADDNEW
+// ADDNEW
+// ADDNEWADDNEW
+// ADDNEW
+// ADDNEW
+// ADDNEW
+// ADDNEW
+// ADDNEWADDNEW
+// ADDNEW
+// ADDNEW
+// ADDNEW
+// ADDNEWADDNEW
+// ADDNEW
+
+
+
+
+var addModal = document.getElementById("addModal");
+var addBtn = document.getElementById("addBtn");
+var addClose = document.getElementsByClassName("addClose")[0];
+
+addBtn.onclick = function() {
+  addModal.style.display = "block";
+};
+
+addClose.onclick = function() {
+  addModal.style.display = "none";
+};
+
+window.addEventListener("click", function(event) {
+  if (event.target == addModal) {
+    addModal.style.display = "none";
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // two.addEventListener('click', showMenu);
@@ -145,7 +302,7 @@ function expand(){
 
 
 //
-// let arrayEksempel = ["en", "to", "tre", "fire"];
+// let arrayEksempel = ["hest", "ko", "kat", 26];
 //
 // for(let i = 0; i < arrayEksempel.length; i++){
 //
