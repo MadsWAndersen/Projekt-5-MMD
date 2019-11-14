@@ -15,6 +15,7 @@ box-sizing: border-box;
   background-color: #2b3e56;
   opacity: 95%;
   top: 0;
+  z-index: 1;
 }
 
 body {
@@ -26,17 +27,17 @@ body {
 	webkit-font-smoothing: antialiased;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
 .backbtn {
 	color: white;
 	grid-column-end: 2;
 	grid-row: 1;
-  font-size: 30px;
-  margin-left: -30px;
+	font-size: 100%;
+	padding-top: 33px;
+	margin-left: 30px;
+}
+
+a {
+	color: white;
 }
 
 .pagetitle{
@@ -44,7 +45,7 @@ a {
 	grid-row: 1;
 	font-size: 12px;
 	text-align: center;
-  padding-top: 8px;
+  padding-top: 20px;
   font-family: 'Josefin Sans';
 }
 
@@ -65,62 +66,62 @@ a {
 }
 
 .one {
-  background-color: red;
+  background-color: #375868;
   grid-row: 1;
   grid-column-start: 1;
 }
 .two {
-  background-color: blue;
+  background-color: #54B9BD;
   grid-row: 2;
   grid-column-start: 1;
 }
 .three {
-  background-color: green;
+  background-color: #5b6b80;
   grid-row: 3;
   grid-column-start: 1;
 }
 .four {
-  background-color: yellow;
+  background-color: #5b6b80;
   grid-row: 1;
   grid-column-start: 2;
 }
 .five {
-  background-color: grey;
+  background-color: #ffffff;
   grid-row: 2;
   grid-column-start: 2;
 }
 .six {
-  background-color: black;
+  background-color: #54B9BD;
   grid-row: 3;
   grid-column-start: 2;
 }
 .seven {
-  background-color: brown;
+  background-color: #ffffff;
   grid-row: 4;
   grid-column-start: 1;
 }
 .eight {
-  background-color: white;
+  background-color: #5b6b80;
   grid-row: 4;
   grid-column-start: 2;
 }
 .nine {
-  background-color: lightblue;
+  background-color: #375868;
   grid-row: 5;
   grid-column-start: 1;
 }
 .ten {
-  background-color: lightgreen;
+  background-color: #54B9BD;
   grid-row: 5;
   grid-column-start: 2;
 }
 .eleven {
-  background-color: lightgreen;
+  background-color: #5b6b80;
   grid-row: 6;
   grid-column-start: 1;
 }
 .twelve {
-  background-color: lightgreen;
+  background-color: #ffffff;
   grid-row: 6;
   grid-column-start: 2;
 }

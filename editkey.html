@@ -10,13 +10,14 @@
 
 	<link href="css/editkeystyle.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/758f05fc43.js" crossorigin="anonymous" src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" data-auto-replace-svg="nest" defer></script>
+	<script src="https://kit.fontawesome.com/758f05fc43.js" crossorigin="anonymous" defer></script>
 </head>
 
 
 
 <body>
   <div class="header">
+    
 <section class="backbtn">
 	 	<a href="main1.html" target="_blank">
 		 	<i class="fas fa-chevron-left"></i>
@@ -40,15 +41,15 @@
 
       <section class="nameinp">
         <label for="inp" class="inp">
-    	     <input id="inputfelt" type="text" placeholder="&nbsp;" onkeyup="myFunction()">
-    	      <span class="label"><div  class="fa fa-key"></div> KEY NAME</span>
+    	     <input id="inp" type="text" placeholder="&nbsp;" onkeyup="inputText()">
+    	      <span class="label"><i class="fa fa-key"></i> KEY NAME</span>
     	      <span class="border"></span>
          </label>
       </section>
 
       <script>
-        function myFunction() {
-          document.getElementById("cardname").value = document.getElementById("inputfelt").value;
+        function inputText() {
+          document.getElementById("cardname").value = document.getElementById("inp").value;
           }
       </script>
 
@@ -58,7 +59,7 @@
     <button type="button" name="button" class="cancel-btn">
       <div class="popup" onclick="popupConnect()">
         CONNECT KEY
-      <span class="popuptext" id="popupKey"><img id="tapgif" src="billeder/giphy.gif">TAP KEY TO CONNECT</span>
+      <span class="popuptext" id="popupKey"><img id="tapgif" src="billeder/giphy.gif" alt="tap key to phone">TAP KEY TO CONNECT</span>
       </div>
     </button>
 
@@ -101,8 +102,8 @@
     <button onclick="changeColor('#fff')" class="color-btn first"></button>
     <button onclick="changeColor('#375868')" class="color-btn second"></button>
     <button onclick="changeColor('#54B9BD')" class="color-btn third"></button>
-    <button class="add-color-btn"><div class="fa fa-plus"></div></button>
-    <button class="add-photo-btn"><div class="fa fa-camera"></div></button>
+    <button class="add-color-btn"><i class="fa fa-plus"></i></button>
+    <button class="add-photo-btn"><i class="fa fa-camera"></i></button>
 
 
     <script>
@@ -163,7 +164,7 @@
   </ul>
 
   <button type="button" name="button" class="save-btn">SAVE CHANGES</button>
-  <button type="button" name="button" class="cancel-btn"><a href="main.html">CANCEL<a/></button>
+  <a href="main1.html" class="cancel-btn" id="cancel-btn">CANCEL</a>
 
     </section>
   </main>

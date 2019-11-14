@@ -48,7 +48,6 @@ function Validate(){
 // Event handler functions
 function emailVerify() {
   if (email.value != "") {
-    document.getElementById('email')
     email_error.innerHTML = "";
     return true;
   }
@@ -56,7 +55,6 @@ function emailVerify() {
 
 function phoneVerify() {
   if (phone.value != "") {
-    document.getElementById('phone')
     phone_error.innerHTML = "";
     return true;
   }
@@ -65,7 +63,6 @@ function phoneVerify() {
 
 function passVerify() {
   if (pass.value != "") {
-    document.getElementById('pass')
     pass_error.innerHTML = "";
     return true;
   }
