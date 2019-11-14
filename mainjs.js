@@ -30,7 +30,7 @@ function leftSort() {
   if (mid.classList.contains("kort3")) {
     mid.classList.remove("kort1", "kort2");
   }
-  left.cssText = "-webkit-transition: all 0.5s ease-in-out;";
+  // left.cssText = "-webkit-transition: all 0.8s ease-in-out;";
 }
 
 
@@ -58,7 +58,7 @@ function midSort() {
     right.classList.remove("kort1", "kort2");
   }
 
-  mid.cssText = "-webkit-transition: all 0.5s ease-in-out;";
+  // mid.cssText = "-webkit-transition: all 0.8s ease-in-out;";
 }
 
 
@@ -86,7 +86,7 @@ function rightSort() {
     left.classList.remove("kort1", "kort2");
   }
 
-  right.cssText = "-webkit-transition: all 0.5s ease-in-out;";
+  // right.cssText = "transition: all 1.8s ease-in-out;";
 }
 
 
@@ -113,7 +113,7 @@ right.addEventListener('click', rightSort);
 let dropExp = document.getElementById("dropdownExp");
 let expColor = document.getElementById("ddContent");
 
-function expand(){
+function expand() {
   dropExp.style.height = "400px";
   dropExp.style.marginTop = "40%";
   expColor.style.backgroundColor = "#000";
