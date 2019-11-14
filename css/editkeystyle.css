@@ -203,6 +203,11 @@ a {
 	border: none;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 100%;
+  text-align: center;
+}
+
+#cancel-btn {
+  padding-top: 18px;
 }
 
 
