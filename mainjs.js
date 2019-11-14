@@ -146,22 +146,3 @@ window.addEventListener("click", function(event) {
     workModal.style.display = "none";
   }
 });
-
-
-
-
-//
-// let arrayEksempel = ["hest", "ko", "kat", 26];
-//
-// for(let i = 0; i < arrayEksempel.length; i++){
-//
-//    console.log(arrayEksempel[i]);
-//
-// }
-
-/* Outputs:
-one
-two
-three
-four
-*/
